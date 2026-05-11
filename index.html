@@ -1,0 +1,1503 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+  <title>Tathastu Naranje — Renaissance Consultant</title>
+  <meta name="description" content="Tathastu Naranje — Market Intelligence Consultant, author of Three Astral, and musician. Finding the story within the system." />
+  <meta name="author" content="Tathastu Naranje" />
+  <meta name="theme-color" content="#0A0A0A" />
+  <meta property="og:title" content="Tathastu Naranje — Renaissance Consultant" />
+  <meta property="og:description" content="Market Intelligence Consultant. Author of Three Astral. Musician." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/seal-emblem-KAzrdzXaHV4aVuJBaKgcm6.webp" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230A0A0A'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='62' font-style='italic' text-anchor='middle' fill='%23B8956A'%3ET%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200..900;1,9..144,200..900&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* ============================================================
+     *  DESIGN SYSTEM — "Editorial Intelligence" v2 (Award Edition)
+     *  Movement: Editorial Modernism × Swiss Typography
+     *  Type: Fraunces · Inter Tight · JetBrains Mono
+     *  Palette: Ink · Bone · Astral Indigo · Brass Gold
+     *  Built by Tathastu
+     * ============================================================ */
+
+    [data-theme="dark"] {
+      --ink: #0A0A0A;
+      --ink-2: #131313;
+      --bone: #F5F1EA;
+      --bone-2: #E8E2D5;
+      --indigo: #1A1F3A;
+      --indigo-2: #0F1326;
+      --brass: #B8956A;
+      --brass-2: #D4B689;
+      --border: rgba(184, 149, 106, 0.16);
+      --border-strong: rgba(184, 149, 106, 0.32);
+      --muted: rgba(245, 241, 234, 0.62);
+      --bg: var(--ink);
+      --fg: var(--bone);
+    }
+    [data-theme="light"] {
+      --ink: #F5F1EA;
+      --ink-2: #ECE6D7;
+      --bone: #0A0A0A;
+      --bone-2: #1A1A1A;
+      --indigo: #DDE0EA;
+      --indigo-2: #C9CCD9;
+      --brass: #8B6A3F;
+      --brass-2: #6E5230;
+      --border: rgba(139, 106, 63, 0.22);
+      --border-strong: rgba(139, 106, 63, 0.42);
+      --muted: rgba(10, 10, 10, 0.6);
+      --bg: var(--ink);
+      --fg: var(--bone);
+    }
+    :root {
+      --font-display: "Fraunces", ui-serif, Georgia, serif;
+      --font-body: "Inter Tight", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
+      --grid: 1440px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+      transition: background 800ms var(--ease), color 800ms var(--ease);
+    }
+    ::selection { background: var(--brass); color: var(--ink); }
+    img, svg { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; cursor: pointer; }
+    button { cursor: pointer; background: none; border: none; color: inherit; font: inherit; }
+    input { font: inherit; }
+
+    .container {
+      width: 100%;
+      max-width: var(--grid);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    @media (min-width: 768px) { .container { padding: 0 2.5rem; } }
+    @media (min-width: 1280px) { .container { padding: 0 4rem; } }
+
+    /* Typography utilities */
+    .display { font-family: var(--font-display); font-weight: 300; letter-spacing: -0.035em; line-height: 0.94; }
+    .display-italic { font-family: var(--font-display); font-style: italic; font-weight: 300; letter-spacing: -0.025em; }
+    .eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--brass);
+    }
+    .lead { font-family: var(--font-display); font-weight: 300; font-style: italic; letter-spacing: -0.012em; line-height: 1.35; }
+    .muted { color: var(--muted); }
+    .brass { color: var(--brass); }
+
+    /* Custom Cursor */
+    .cursor-dot, .cursor-ring {
+      position: fixed;
+      top: 0; left: 0;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate3d(-100px, -100px, 0);
+      mix-blend-mode: difference;
+      will-change: transform;
+    }
+    .cursor-dot {
+      width: 6px; height: 6px;
+      background: var(--brass);
+      border-radius: 50%;
+      transition: opacity 200ms ease, transform 60ms linear, width 400ms var(--ease), height 400ms var(--ease);
+    }
+    .cursor-ring {
+      width: 36px; height: 36px;
+      border: 1px solid var(--brass);
+      border-radius: 50%;
+      transition: width 500ms var(--ease), height 500ms var(--ease), opacity 300ms ease, background 400ms ease;
+    }
+    body.cursor-hover .cursor-ring { width: 64px; height: 64px; background: rgba(184, 149, 106, 0.08); }
+    body.cursor-hover .cursor-dot { width: 0; height: 0; }
+    @media (max-width: 900px) { .cursor-dot, .cursor-ring { display: none; } }
+
+    /* Film grain */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 100;
+      opacity: 0.07;
+      mix-blend-mode: overlay;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95  0 0 0 0 0.94  0 0 0 0 0.92  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+    }
+
+    /* Brass animated link */
+    .brass-link {
+      position: relative;
+      display: inline-block;
+      transition: color 500ms var(--ease);
+    }
+    .brass-link::after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: -3px;
+      width: 100%; height: 1px;
+      background: var(--brass);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 600ms var(--ease);
+    }
+    .brass-link:hover { color: var(--brass); }
+    .brass-link:hover::after { transform: scaleX(1); transform-origin: left; }
+
+    /* Reveal animations */
+    .reveal { opacity: 0; transform: translateY(40px); transition: opacity 1.4s var(--ease), transform 1.4s var(--ease); }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    /* No-JS / fallback: show after 3s no matter what */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; }
+      .char-reveal .char { opacity: 1; transform: none; }
+    }
+    .reveal-d1 { transition-delay: 0.12s; } .reveal-d2 { transition-delay: 0.24s; } .reveal-d3 { transition-delay: 0.36s; } .reveal-d4 { transition-delay: 0.48s; }
+    .reveal-mask { overflow: hidden; }
+    .reveal-mask > * { display: block; transform: translateY(110%); transition: transform 1.3s var(--ease); }
+    .reveal-mask.in > * { transform: translateY(0); }
+
+    .char-reveal { display: inline-block; }
+    .char-reveal .char {
+      display: inline-block;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 700ms var(--ease), transform 900ms var(--ease);
+    }
+    .char-reveal.in .char { opacity: 1; transform: translateY(0); }
+
+    /* TOP BAR — local time + currently */
+    .topbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 60;
+      padding: 0.65rem 0;
+      background: color-mix(in srgb, var(--bg) 85%, transparent);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .topbar-item { display: flex; align-items: center; gap: 0.55rem; color: var(--muted); }
+    .topbar-item .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--brass); animation: pulseDot 2.4s ease-in-out infinite; }
+    @keyframes pulseDot { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.4; transform: scale(0.7); } }
+    .topbar-item .brass { color: var(--brass); }
+    .topbar-now {
+      flex: 1;
+      min-width: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: center;
+    }
+    @media (max-width: 720px) {
+      .topbar-item.location, .topbar-now { display: none; }
+    }
+
+    /* HEADER */
+    header.site {
+      position: fixed;
+      top: 36px; left: 0; right: 0;
+      z-index: 55;
+      padding: 1.25rem 0;
+      transition: padding 700ms var(--ease), background 700ms var(--ease), top 600ms var(--ease);
+    }
+    header.site.scrolled {
+      top: 36px;
+      padding: 0.65rem 0;
+      background: color-mix(in srgb, var(--bg) 75%, transparent);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .nav-brand { display: flex; align-items: baseline; gap: 0.8rem; }
+    .nav-brand .display { font-size: 1.3rem; }
+    .nav-brand .mark {
+      width: 28px; height: 28px;
+      border: 1px solid var(--brass);
+      border-radius: 50%;
+      display: inline-flex; align-items: center; justify-content: center;
+      color: var(--brass);
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 0.85rem;
+    }
+    nav.menu { display: none; gap: 2rem; font-size: 0.9rem; }
+    @media (min-width: 920px) { nav.menu { display: flex; } }
+    .nav-actions { display: flex; align-items: center; gap: 0.5rem; }
+    .icon-btn {
+      width: 38px; height: 38px;
+      border: 1px solid var(--border-strong);
+      display: inline-flex; align-items: center; justify-content: center;
+      color: var(--fg);
+      transition: border-color 400ms var(--ease), color 400ms var(--ease), background 400ms var(--ease);
+    }
+    .icon-btn:hover { border-color: var(--brass); color: var(--brass); background: color-mix(in srgb, var(--brass) 6%, transparent); }
+    .cta-button {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      border: 1px solid var(--brass);
+      color: var(--brass);
+      padding: 0.6rem 1rem;
+      transition: background 500ms var(--ease), color 500ms var(--ease);
+    }
+    .cta-button:hover { background: var(--brass); color: var(--ink); }
+
+    /* SECTION MINIMAP — floating side nav */
+    .minimap {
+      position: fixed;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 40;
+      display: none;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    @media (min-width: 1100px) { .minimap { display: flex; } }
+    .minimap a {
+      display: flex; align-items: center; gap: 0.85rem;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      transition: color 400ms var(--ease);
+    }
+    .minimap a .line {
+      width: 20px; height: 1px;
+      background: var(--muted);
+      transition: width 500ms var(--ease), background 400ms var(--ease);
+    }
+    .minimap a .label {
+      opacity: 0;
+      transform: translateX(-8px);
+      transition: opacity 400ms var(--ease), transform 400ms var(--ease);
+    }
+    .minimap a:hover, .minimap a.active { color: var(--brass); }
+    .minimap a:hover .line, .minimap a.active .line { background: var(--brass); width: 40px; }
+    .minimap a:hover .label, .minimap a.active .label { opacity: 1; transform: translateX(0); }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+      padding: 9rem 0 6rem;
+    }
+    @media (min-width: 768px) { .hero { padding: 12rem 0 8rem; } }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      display: none;
+      justify-content: flex-end;
+      align-items: stretch;
+    }
+    @media (min-width: 768px) { .hero-bg { display: flex; } }
+    .hero-bg-img {
+      width: 55%; height: 100%;
+      background-size: cover;
+      background-position: center;
+      -webkit-mask-image: linear-gradient(to left, black 25%, transparent 95%);
+      mask-image: linear-gradient(to left, black 25%, transparent 95%);
+      transition: transform 100ms linear;
+    }
+    .hero-bg-mobile {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.28;
+    }
+    @media (min-width: 768px) { .hero-bg-mobile { display: none; } }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, var(--bg), color-mix(in srgb, var(--bg) 80%, transparent) 45%, transparent 75%); }
+
+    .hero-inner {
+      position: relative;
+      z-index: 10;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.5rem;
+    }
+    .hero-rail { display: none; grid-column: 1; }
+    @media (min-width: 768px) { .hero-rail { display: flex; justify-content: center; padding-top: 1rem; } }
+    .rule-vertical { width: 1px; height: 16rem; background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--brass) 70%, transparent), transparent); }
+    .hero-content { grid-column: 1 / -1; }
+    @media (min-width: 768px) { .hero-content { grid-column: 2 / span 9; } }
+
+    .hero-volume {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .hero-volume .roman {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 0.85rem;
+      color: var(--brass);
+    }
+
+    .hero h1 {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(4.5rem, 13vw, 11rem);
+      line-height: 0.9;
+      letter-spacing: -0.04em;
+    }
+    @media (min-width: 1280px) { .hero h1 { font-size: 168px; } }
+    .hero h1 .word { display: block; }
+    .hero h1 .word.italic { font-style: italic; color: var(--brass); margin-top: -0.1em; }
+
+    .currently-row {
+      margin-top: 3rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.85rem;
+      margin-bottom: 1.5rem;
+    }
+    .currently-row .rule { display: inline-block; width: 3rem; height: 1px; background: var(--brass); }
+    .currently-row .num {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      color: var(--muted);
+      letter-spacing: 0.18em;
+    }
+
+    .tagline-wrap { height: 2.8rem; position: relative; overflow: hidden; }
+    .tagline {
+      position: absolute;
+      inset: 0;
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-style: italic;
+      letter-spacing: -0.012em;
+      font-size: 1.6rem;
+      transform: translateY(40px);
+      opacity: 0;
+      transition: transform 900ms var(--ease), opacity 900ms var(--ease);
+    }
+    @media (min-width: 768px) { .tagline { font-size: 1.95rem; } }
+    .tagline.active { transform: translateY(0); opacity: 1; }
+    .tagline.exit { transform: translateY(-40px); opacity: 0; }
+
+    .hero-desc { margin-top: 2rem; font-size: 1rem; max-width: 32rem; color: var(--muted); }
+    @media (min-width: 768px) { .hero-desc { font-size: 1.0625rem; } }
+
+    .hero-actions {
+      margin-top: 3rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1.25rem;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.9rem 1.6rem;
+      border: 1px solid var(--brass);
+      color: var(--brass);
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+      transition: color 600ms var(--ease);
+    }
+    .btn-primary::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: var(--brass);
+      transform: translateY(100%);
+      transition: transform 600ms var(--ease);
+      z-index: -1;
+    }
+    .btn-primary:hover { color: var(--ink); }
+    .btn-primary:hover::before { transform: translateY(0); }
+    .btn-primary .arrow { transition: transform 500ms var(--ease); }
+    .btn-primary:hover .arrow { transform: translate(3px, -3px); }
+
+    .scroll-cue {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .scroll-cue .eyebrow { font-size: 0.6rem; }
+    .scroll-cue-line {
+      width: 1px;
+      height: 3.5rem;
+      background: linear-gradient(to bottom, var(--brass), transparent);
+      transform-origin: top;
+      animation: pulseLine 2.4s ease-in-out infinite;
+    }
+    @keyframes pulseLine { 0%,100% { transform: scaleY(1); } 50% { transform: scaleY(0.35); } }
+
+    /* MARQUEE */
+    .marquee {
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+      padding: 1.6rem 0;
+      background: var(--ink-2);
+      position: relative;
+    }
+    .marquee::before, .marquee::after {
+      content: "";
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 100px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .marquee::before { left: 0; background: linear-gradient(to right, var(--ink-2), transparent); }
+    .marquee::after { right: 0; background: linear-gradient(to left, var(--ink-2), transparent); }
+    .marquee-track {
+      display: inline-flex;
+      gap: 3rem;
+      white-space: nowrap;
+      animation: marquee 38s linear infinite;
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      letter-spacing: -0.02em;
+    }
+    .marquee-track span { display: inline-flex; align-items: center; gap: 3rem; }
+    .marquee-track .star { color: var(--brass); font-size: 0.6em; transform: translateY(-0.1em); }
+    .marquee-track .italic { font-style: italic; color: var(--brass); }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+    /* MANIFESTO */
+    .manifesto { padding: 5rem 0; border-bottom: 1px solid var(--border); }
+    .manifesto p {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(1.6rem, 4.5vw, 3.4rem);
+      line-height: 1.08;
+      max-width: 70rem;
+      letter-spacing: -0.025em;
+    }
+    .manifesto .muted-large { color: var(--muted); }
+    .manifesto .italic-brass { font-style: italic; color: var(--brass); }
+
+    /* IDENTITY */
+    .identity { padding: 7rem 0; position: relative; }
+    @media (min-width: 768px) { .identity { padding: 10rem 0; } }
+    .id-num-bg {
+      position: absolute;
+      pointer-events: none;
+      font-family: var(--font-display);
+      font-weight: 200;
+      font-size: clamp(14rem, 32vw, 28rem);
+      line-height: 1;
+      color: var(--brass);
+      opacity: 0.04;
+      letter-spacing: -0.05em;
+      z-index: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .identity.left .id-num-bg { left: -2vw; }
+    .identity.right .id-num-bg { right: -2vw; }
+
+    .identity-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 2rem;
+      align-items: center;
+    }
+    @media (min-width: 768px) { .identity-grid { gap: 4rem; } }
+    .identity-image { grid-column: 1 / -1; position: relative; overflow: hidden; }
+    .identity-text { grid-column: 1 / -1; }
+    @media (min-width: 768px) {
+      .identity-image { grid-column: 1 / span 6; }
+      .identity-text { grid-column: 7 / -1; }
+      .identity.right .identity-image { grid-column: 7 / -1; order: 2; }
+      .identity.right .identity-text { grid-column: 1 / span 6; }
+    }
+    .identity-image img { width: 100%; height: 440px; object-fit: cover; transition: transform 1.6s var(--ease); }
+    @media (min-width: 768px) { .identity-image img { height: 600px; } }
+    .identity-image:hover img { transform: scale(1.04); }
+    .fig-label {
+      position: absolute; top: 1rem; left: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--brass);
+      background: rgba(10,10,10,0.7);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(184,149,106,0.35);
+      padding: 0.35rem 0.7rem;
+    }
+    .id-eyebrow-row { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1.5rem; }
+    .id-eyebrow-row .rule { flex: 1; height: 1px; background: var(--border-strong); }
+    .id-eyebrow-row .num { color: var(--muted); }
+    .identity h2 {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(2.5rem, 6.5vw, 5rem);
+      line-height: 0.98;
+      letter-spacing: -0.035em;
+      margin-bottom: 1.5rem;
+    }
+    .identity h2 .italic { font-style: italic; color: var(--brass); }
+    .identity .body-lead {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-style: italic;
+      font-size: 1.3rem;
+      line-height: 1.4;
+      letter-spacing: -0.012em;
+      color: var(--muted);
+      max-width: 34rem;
+      margin-bottom: 2rem;
+    }
+    @media (min-width: 768px) { .identity .body-lead { font-size: 1.55rem; } }
+    .id-bullets {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem 2rem;
+      max-width: 34rem;
+      margin-bottom: 2.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+    }
+    .id-bullets dt { font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass); margin-bottom: 0.5rem; }
+    .id-bullets dd { font-size: 0.875rem; line-height: 1.55; color: var(--fg); }
+    .id-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.85rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      position: relative;
+      padding: 0.85rem 0;
+      transition: color 500ms var(--ease);
+    }
+    .id-cta::after {
+      content: "";
+      position: absolute;
+      left: 0; bottom: 0;
+      width: 100%; height: 1px;
+      background: var(--brass);
+      transform: scaleX(0.2);
+      transform-origin: left;
+      transition: transform 700ms var(--ease);
+    }
+    .id-cta:hover { color: var(--brass); }
+    .id-cta:hover::after { transform: scaleX(1); }
+    .id-cta .arrow { color: var(--brass); transition: transform 500ms var(--ease); }
+    .id-cta:hover .arrow { transform: translate(4px, -4px); }
+
+    /* HORIZONTAL GALLERY */
+    .gallery {
+      padding: 6rem 0 7rem;
+      background: var(--ink-2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    .gallery-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem; }
+    .gallery-head h2 { font-family: var(--font-display); font-weight: 300; font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -0.03em; line-height: 1; }
+    .gallery-head h2 .italic { font-style: italic; color: var(--brass); }
+    .gallery-scroller {
+      display: flex;
+      gap: 1.25rem;
+      overflow-x: auto;
+      padding: 0 1.5rem 1.5rem;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: thin;
+      scrollbar-color: var(--brass) transparent;
+    }
+    .gallery-scroller::-webkit-scrollbar { height: 6px; }
+    .gallery-scroller::-webkit-scrollbar-track { background: var(--border); }
+    .gallery-scroller::-webkit-scrollbar-thumb { background: var(--brass); border-radius: 3px; }
+    .gallery-card {
+      flex: 0 0 auto;
+      width: 320px;
+      scroll-snap-align: start;
+      border: 1px solid var(--border-strong);
+      background: var(--bg);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      transition: border-color 500ms var(--ease), transform 600ms var(--ease);
+    }
+    @media (min-width: 768px) { .gallery-card { width: 380px; padding: 2rem; } }
+    .gallery-card:hover { border-color: var(--brass); transform: translateY(-4px); }
+    .gallery-card .num {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: 2rem;
+      color: var(--brass);
+      font-style: italic;
+    }
+    .gallery-card .kicker {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .gallery-card h3 {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: 1.6rem;
+      line-height: 1.12;
+      letter-spacing: -0.02em;
+    }
+    .gallery-card p { font-size: 0.875rem; line-height: 1.55; color: var(--muted); }
+    .gallery-card .quote {
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 1rem;
+      line-height: 1.4;
+      color: var(--fg);
+    }
+    .gallery-card .quote::before { content: "“"; color: var(--brass); font-size: 1.5em; line-height: 0; vertical-align: -0.2em; margin-right: 0.1em; }
+
+    /* BOOK FEATURE */
+    .book {
+      position: relative;
+      padding: 7rem 0;
+      background: linear-gradient(180deg, var(--bg), color-mix(in srgb, var(--indigo) 35%, var(--bg)) 50%, var(--bg));
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+    @media (min-width: 768px) { .book { padding: 10rem 0; } }
+    .book-bg {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: 0.22;
+      pointer-events: none;
+    }
+    .book-inner {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 2.5rem;
+      align-items: center;
+    }
+    .book-cover-wrap { grid-column: 1 / -1; position: relative; }
+    @media (min-width: 768px) { .book-cover-wrap { grid-column: 1 / span 5; } }
+    @media (min-width: 1024px) { .book-cover-wrap { grid-column: 1 / span 4; } }
+    .book-cover-wrap::before { content: ""; position: absolute; inset: -2rem; background: rgba(184,149,106,0.06); filter: blur(60px); }
+    .book-cover-wrap img { position: relative; width: 100%; transform: rotate(-3deg); filter: drop-shadow(0 30px 60px rgba(0,0,0,0.65)); transition: transform 1.4s var(--ease); }
+    .book-cover-wrap:hover img { transform: rotate(-1.5deg) scale(1.02); }
+    .book-text { grid-column: 1 / -1; }
+    @media (min-width: 768px) { .book-text { grid-column: 6 / -1; } }
+    @media (min-width: 1024px) { .book-text { grid-column: 6 / span 7; } }
+    .book h2 {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      line-height: 0.94;
+      letter-spacing: -0.035em;
+      margin-bottom: 2rem;
+    }
+    .book h2 .italic { font-style: italic; color: var(--brass); }
+    .book h2 .subtitle { display: block; font-style: italic; font-size: clamp(1.25rem, 3vw, 2rem); color: var(--muted); margin-top: 0.5rem; }
+    .drop-cap { font-size: 1.0625rem; line-height: 1.65; max-width: 38rem; margin-bottom: 2rem; color: color-mix(in srgb, var(--fg) 92%, transparent); }
+    .drop-cap::first-letter { font-family: var(--font-display); font-weight: 400; float: left; font-size: 4.5rem; line-height: 0.85; padding-right: 0.5rem; padding-top: 0.25rem; color: var(--brass); }
+    .book-meta { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 38rem; margin-bottom: 2.5rem; }
+    @media (min-width: 640px) { .book-meta { grid-template-columns: repeat(4, 1fr); } }
+    .book-meta .item { border-top: 1px solid var(--border-strong); padding-top: 0.75rem; }
+    .book-meta .item .label { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass); margin-bottom: 0.25rem; }
+    .book-meta .item .value { font-size: 0.875rem; font-weight: 500; }
+    .buy-links { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .buy-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      border: 1px solid var(--border-strong);
+      padding: 0.65rem 1rem;
+      transition: border-color 500ms var(--ease), color 500ms var(--ease), background 500ms var(--ease);
+    }
+    .buy-link:hover { border-color: var(--brass); color: var(--brass); background: color-mix(in srgb, var(--brass) 8%, transparent); }
+    .buy-link .arrow { width: 11px; height: 11px; transition: transform 500ms var(--ease); }
+    .buy-link:hover .arrow { transform: translate(2px, -2px); }
+
+    /* ESSAYS */
+    .essays { padding: 7rem 0; }
+    @media (min-width: 768px) { .essays { padding: 10rem 0; } }
+    .essays-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 4rem; flex-wrap: wrap; gap: 1rem; }
+    .essays-head h2 { font-family: var(--font-display); font-weight: 300; font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing: -0.03em; line-height: 1; }
+    .essays-head h2 .italic { font-style: italic; color: var(--brass); }
+    .essays-grid { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--border-strong); }
+    @media (min-width: 768px) { .essays-grid { grid-template-columns: repeat(3, 1fr); } }
+    .essay-card { background: var(--bg); padding: 2.5rem; transition: background 700ms var(--ease); position: relative; overflow: hidden; }
+    .essay-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent, color-mix(in srgb, var(--brass) 4%, transparent));
+      opacity: 0;
+      transition: opacity 600ms var(--ease);
+      pointer-events: none;
+    }
+    .essay-card:hover::after { opacity: 1; }
+    .essay-card .top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem; }
+    .essay-card .num { font-family: var(--font-display); font-weight: 300; font-style: italic; font-size: 2rem; color: var(--brass); }
+    .essay-card .tag { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass); border: 1px solid rgba(184,149,106,0.4); padding: 0.25rem 0.55rem; }
+    .essay-card h3 { font-family: var(--font-display); font-weight: 300; font-size: 1.65rem; line-height: 1.12; letter-spacing: -0.022em; margin: 1rem 0; }
+    @media (min-width: 768px) { .essay-card h3 { font-size: 1.85rem; } }
+    .essay-card p { font-size: 0.875rem; line-height: 1.6; color: var(--muted); }
+    .essay-card .read { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 2rem; font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass); }
+
+    /* DIVIDER STAR BAND */
+    .divider-band {
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .divider-band::before, .divider-band::after { content: ""; position: absolute; left: 0; right: 0; height: 60px; pointer-events: none; }
+    .divider-band::before { top: 0; background: linear-gradient(to bottom, var(--bg), transparent); }
+    .divider-band::after { bottom: 0; background: linear-gradient(to top, var(--bg), transparent); }
+
+    /* CONTACT */
+    .contact { padding: 7rem 0; border-top: 1px solid var(--border); position: relative; overflow: hidden; }
+    @media (min-width: 768px) { .contact { padding: 10rem 0; } }
+    .contact-bg { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0.13; pointer-events: none; }
+    .contact-grid { position: relative; display: grid; grid-template-columns: repeat(12, 1fr); gap: 2.5rem; }
+    .contact-left { grid-column: 1 / -1; }
+    .contact-right { grid-column: 1 / -1; }
+    @media (min-width: 768px) {
+      .contact-left { grid-column: 1 / span 7; }
+      .contact-right { grid-column: 8 / -1; }
+    }
+    .contact h2 { font-family: var(--font-display); font-weight: 300; font-size: clamp(3rem, 8vw, 7rem); line-height: 0.92; letter-spacing: -0.035em; margin-bottom: 2.5rem; }
+    .contact h2 .italic { font-style: italic; color: var(--brass); }
+    .contact-lead { font-family: var(--font-display); font-weight: 300; font-style: italic; font-size: clamp(1.25rem, 3vw, 1.55rem); color: var(--muted); max-width: 32rem; margin-bottom: 3rem; letter-spacing: -0.012em; line-height: 1.4; }
+    .contact-links { max-width: 30rem; }
+    .contact-link { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid var(--border-strong); transition: border-color 500ms var(--ease); }
+    .contact-link:hover { border-bottom-color: var(--brass); }
+    .contact-link .left { display: flex; align-items: center; gap: 1rem; font-family: var(--font-mono); font-size: 0.85rem; }
+    .contact-link .icon { width: 16px; height: 16px; color: var(--brass); flex-shrink: 0; }
+    .contact-link .arrow { width: 16px; height: 16px; transition: transform 500ms var(--ease); }
+    .contact-link:hover .arrow { transform: translate(3px, -3px); }
+
+    .newsletter-card {
+      border: 1px solid var(--border-strong);
+      padding: 2.5rem;
+      background: color-mix(in srgb, var(--bg) 60%, transparent);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      position: relative;
+    }
+    .newsletter-card::before {
+      content: "";
+      position: absolute;
+      top: -1px; left: -1px;
+      width: 30px; height: 30px;
+      border-top: 1px solid var(--brass);
+      border-left: 1px solid var(--brass);
+    }
+    .newsletter-card::after {
+      content: "";
+      position: absolute;
+      bottom: -1px; right: -1px;
+      width: 30px; height: 30px;
+      border-bottom: 1px solid var(--brass);
+      border-right: 1px solid var(--brass);
+    }
+    .newsletter-card h3 { font-family: var(--font-display); font-weight: 300; font-size: 1.95rem; line-height: 1.12; letter-spacing: -0.022em; margin: 1rem 0; }
+    .newsletter-card p { font-size: 0.875rem; line-height: 1.6; color: var(--muted); margin-bottom: 1.5rem; }
+    .newsletter-card form { display: flex; flex-direction: column; gap: 0.75rem; }
+    .newsletter-card input { width: 100%; background: transparent; border: 1px solid var(--border-strong); padding: 0.85rem 1rem; color: var(--fg); font-family: var(--font-mono); font-size: 0.85rem; outline: none; transition: border-color 500ms var(--ease); }
+    .newsletter-card input::placeholder { color: color-mix(in srgb, var(--fg) 40%, transparent); }
+    .newsletter-card input:focus { border-color: var(--brass); }
+    .newsletter-card button[type="submit"] { width: 100%; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase; border: 1px solid var(--brass); color: var(--brass); padding: 0.9rem 1rem; transition: background 500ms var(--ease), color 500ms var(--ease); }
+    .newsletter-card button[type="submit"]:hover { background: var(--brass); color: var(--ink); }
+
+    /* SEAL FOOTER */
+    .seal-footer {
+      padding: 5rem 0 3rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      position: relative;
+    }
+    .seal-footer .seal {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 2.5rem;
+      opacity: 0.7;
+      transition: opacity 500ms var(--ease), transform 800ms var(--ease);
+      animation: slowSpin 60s linear infinite;
+    }
+    .seal-footer:hover .seal { opacity: 1; }
+    @keyframes slowSpin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+    .seal-footer .footer-words {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(2.5rem, 8vw, 6rem);
+      letter-spacing: -0.035em;
+      line-height: 0.95;
+      margin-bottom: 2rem;
+    }
+    .seal-footer .footer-words .italic { font-style: italic; color: var(--brass); }
+    .seal-footer .footer-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding-top: 2.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .seal-footer .footer-meta .brass { color: var(--brass); }
+
+    /* Progress bar */
+    .progress {
+      position: fixed;
+      top: 36px;
+      left: 0;
+      height: 2px;
+      width: 0%;
+      background: var(--brass);
+      z-index: 70;
+      transition: width 150ms linear;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Custom cursor -->
+  <div class="cursor-ring" id="cursor-ring"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <!-- Top status bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-item location">
+        <span class="dot"></span>
+        <span>Mumbai, IN</span>
+        <span class="brass" id="local-time">—</span>
+      </div>
+      <div class="topbar-now"><span class="muted">Currently — </span><span class="brass" id="now-status">studying autonomous commerce</span></div>
+      <div class="topbar-item">
+        <span>Available for select work</span>
+        <span class="brass">→</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll progress -->
+  <div class="progress" id="progress"></div>
+
+  <!-- Header -->
+  <header class="site" id="site-header">
+    <div class="container nav-inner">
+      <a href="#top" class="nav-brand">
+        <span class="mark">T</span>
+        <span class="display">Tathastu Naranje</span>
+      </a>
+      <nav class="menu">
+        <a href="#consultant" class="brass-link">Consultant</a>
+        <a href="#author" class="brass-link">Author</a>
+        <a href="#musician" class="brass-link">Musician</a>
+        <a href="#essays" class="brass-link">Essays</a>
+        <a href="#contact" class="brass-link">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle theme">
+          <svg id="theme-icon-dark" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg id="theme-icon-light" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        </button>
+        <a href="#contact" class="cta-button">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Section minimap (desktop only) -->
+  <nav class="minimap" id="minimap">
+    <a href="#top" data-section="top"><span class="line"></span><span class="label">Index</span></a>
+    <a href="#consultant" data-section="consultant"><span class="line"></span><span class="label">01 — Consultant</span></a>
+    <a href="#author" data-section="author"><span class="line"></span><span class="label">02 — Author</span></a>
+    <a href="#musician" data-section="musician"><span class="line"></span><span class="label">03 — Musician</span></a>
+    <a href="#essays" data-section="essays"><span class="line"></span><span class="label">Essays</span></a>
+    <a href="#contact" data-section="contact"><span class="line"></span><span class="label">Contact</span></a>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="hero-bg-mobile" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-portrait-RjmzbWzEAASPTMGNEcXj45.webp')"></div>
+      <div class="hero-bg">
+        <div class="hero-bg-img" id="hero-bg-img" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-portrait-RjmzbWzEAASPTMGNEcXj45.webp')"></div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-rail"><div class="rule-vertical"></div></div>
+        <div class="hero-content">
+          <div class="reveal in">
+            <div class="hero-volume">
+              <span class="eyebrow">Volume I · Est. 2026</span>
+              <span class="roman">— Mumbai, India</span>
+            </div>
+          </div>
+          <h1 class="reveal in">
+            <span class="word">Tathastu</span>
+            <span class="word italic">Naranje</span>
+          </h1>
+          <div class="reveal in reveal-d2" style="max-width: 38rem;">
+            <div class="currently-row">
+              <span class="eyebrow">Currently</span>
+              <span class="rule"></span>
+              <span class="num" id="tagline-counter">01 / 03</span>
+            </div>
+            <div class="tagline-wrap" id="tagline-wrap">
+              <div class="tagline">Market Intelligence Consultant.</div>
+              <div class="tagline">Author of Three Astral.</div>
+              <div class="tagline">Musician. Always learning.</div>
+            </div>
+            <p class="hero-desc">
+              A market intelligence consultant who finds the story within the system —
+              decoding global categories for procurement leaders, crafting parallel worlds in fiction,
+              and translating discipline into music.
+            </p>
+            <div class="hero-actions">
+              <a href="#book" class="btn-primary">
+                <span>Read the book</span>
+                <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+              <a href="#essays" class="brass-link" style="font-size: 0.9rem;">Or read the essays →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-cue">
+        <span class="eyebrow">Scroll</span>
+        <div class="scroll-cue-line"></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE BAND -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Market Intelligence <span class="star">✦</span> <span class="italic">Speculative Fiction</span> <span class="star">✦</span> Strategic Sourcing <span class="star">✦</span> <span class="italic">Three Astral</span> <span class="star">✦</span> Logic Pro <span class="star">✦</span> <span class="italic">Renaissance Consultant</span> <span class="star">✦</span> Finding the Story <span class="star">✦</span></span>
+        <span>Market Intelligence <span class="star">✦</span> <span class="italic">Speculative Fiction</span> <span class="star">✦</span> Strategic Sourcing <span class="star">✦</span> <span class="italic">Three Astral</span> <span class="star">✦</span> Logic Pro <span class="star">✦</span> <span class="italic">Renaissance Consultant</span> <span class="star">✦</span> Finding the Story <span class="star">✦</span></span>
+      </div>
+    </div>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto">
+      <div class="container reveal">
+        <p>
+          <span class="muted-large">I don't just find data —</span>
+          <span class="italic-brass display-italic">I find the story within it.</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- CONSULTANT -->
+    <section id="consultant" class="identity left" data-section>
+      <div class="id-num-bg">01</div>
+      <div class="container">
+        <div class="identity-grid">
+          <div class="identity-image reveal">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-data-NBZhmVMH4KXnqjbEP3g396.webp" alt="The Strategic Consultant" loading="lazy"/>
+            <div class="fig-label">Fig. 01 — The Consultant</div>
+          </div>
+          <div class="identity-text reveal reveal-d1">
+            <div class="id-eyebrow-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B8956A" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l3-3 4 4 5-5"/></svg>
+              <span class="eyebrow">The Strategic Consultant</span>
+              <span class="rule"></span>
+              <span class="eyebrow num">01</span>
+            </div>
+            <h2>Market intelligence, <span class="italic">strategically applied.</span></h2>
+            <p class="body-lead">I lead category market intelligence for global procurement teams — turning fragmented signals from suppliers, pricing benchmarks, and macro trends into briefings that sourcing managers can actually act on.</p>
+            <dl class="id-bullets">
+              <div><dt>Practice</dt><dd>Category market intelligence, vendor analysis, supplier landscapes, negotiation enablement.</dd></div>
+              <div><dt>Method</dt><dd>Authentic sources only. Primary data first, frameworks second, narrative last.</dd></div>
+              <div><dt>Currently</dt><dd>Studying autonomous commerce and how agentic AI is reshaping the buyer's chair.</dd></div>
+              <div><dt>Available for</dt><dd>Advisory conversations, consulting briefs, podcasts, and panel discussions.</dd></div>
+            </dl>
+            <a href="https://in.linkedin.com/in/tathastu-naranje" target="_blank" rel="noreferrer" class="id-cta">
+              <span>View LinkedIn profile</span>
+              <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTHOR -->
+    <section id="author" class="identity right" data-section>
+      <div class="id-num-bg">02</div>
+      <div class="container">
+        <div class="identity-grid">
+          <div class="identity-image reveal">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-astral-LnLjvyeRWGXXcTuXzNwTXV.webp" alt="The Storyteller" loading="lazy"/>
+            <div class="fig-label">Fig. 02 — The Storyteller</div>
+          </div>
+          <div class="identity-text reveal reveal-d1">
+            <div class="id-eyebrow-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B8956A" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+              <span class="eyebrow">The Storyteller</span>
+              <span class="rule"></span>
+              <span class="eyebrow num">02</span>
+            </div>
+            <h2>Author of <span class="italic">Three Astral.</span></h2>
+            <p class="body-lead">A debut novel about a young man whose seizures transport him between Earth and a mystical parallel planet. A meditation on consciousness, identity, and the porous boundary between perception and reality.</p>
+            <dl class="id-bullets">
+              <div><dt>Genre</dt><dd>Speculative fiction with philosophical undertones.</dd></div>
+              <div><dt>Format</dt><dd>Paperback, also available digitally through major retailers.</dd></div>
+              <div><dt>In progress</dt><dd>Volume II of the Three Astral universe — early drafts.</dd></div>
+              <div><dt>Reader notes</dt><dd>Open to interviews, book club visits, and reader correspondence.</dd></div>
+            </dl>
+            <a href="#book" class="id-cta">
+              <span>Read more about the book</span>
+              <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK FEATURE -->
+    <section id="book" class="book">
+      <div class="book-bg" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-astral-LnLjvyeRWGXXcTuXzNwTXV.webp')"></div>
+      <div class="container book-inner">
+        <div class="book-cover-wrap reveal">
+          <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/book-cover-Qyf3gBNt3MnHeFaD7nAkrU.webp" alt="Three Astral: Thought's Deception" loading="lazy"/>
+        </div>
+        <div class="book-text reveal reveal-d1">
+          <div class="eyebrow" style="margin-bottom: 1.5rem;">A debut novel by Tathastu Naranje</div>
+          <h2>Three <span class="italic">Astral</span><span class="subtitle">— Thought's Deception</span></h2>
+          <p class="drop-cap">On Earth, Tathastu grapples with vivid seizures that transport his consciousness to a mystical planet — Three Astral. Torn between two worlds, his journey becomes a quest for identity, purpose, and the resolution of a dual existence. A meditation on perception, consciousness, and the porous boundary between thought and reality.</p>
+          <div class="book-meta">
+            <div class="item"><div class="label">Genre</div><div class="value">Speculative Fiction</div></div>
+            <div class="item"><div class="label">Format</div><div class="value">Paperback</div></div>
+            <div class="item"><div class="label">Published</div><div class="value">Aug 2024</div></div>
+            <div class="item"><div class="label">ISBN</div><div class="value">9789365541489</div></div>
+          </div>
+          <div class="buy-links">
+            <a class="buy-link" target="_blank" rel="noreferrer" href="https://www.amazon.com/Three-Astral-deception-Tathastu-Naranje/dp/9365541484">Amazon <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+            <a class="buy-link" target="_blank" rel="noreferrer" href="https://www.booksamillion.com/p/Three-Astral/Tathastu-Naranje/9789365541489">Books-A-Million <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+            <a class="buy-link" target="_blank" rel="noreferrer" href="https://www.thriftbooks.com/w/three-astral-thoughts-deception_tathastu-naranje/53795700/">ThriftBooks <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+            <a class="buy-link" target="_blank" rel="noreferrer" href="https://wissenbookstore.com/product/three-astral-thoughts-deception/">Wissen <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+            <a class="buy-link" target="_blank" rel="noreferrer" href="https://books.google.com/books/about/Three_Astral_Thought_s_deception.html?id=A6QbEQAAQBAJ">Google Books <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MUSICIAN -->
+    <section id="musician" class="identity left" data-section>
+      <div class="id-num-bg">03</div>
+      <div class="container">
+        <div class="identity-grid">
+          <div class="identity-image reveal">
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-music-hHVT7ioyjxFeKq22jQncDF.webp" alt="The Creative Spirit" loading="lazy"/>
+            <div class="fig-label">Fig. 03 — The Creative Spirit</div>
+          </div>
+          <div class="identity-text reveal reveal-d1">
+            <div class="id-eyebrow-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B8956A" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+              <span class="eyebrow">The Creative Spirit</span>
+              <span class="rule"></span>
+              <span class="eyebrow num">03</span>
+            </div>
+            <h2>Musician — <span class="italic">always learning.</span></h2>
+            <p class="body-lead">Guitar, keyboard, and a vocal practice still in its honest early chapters. I produce in Logic Pro, study how AI is reshaping music creation, and treat practice as the same discipline I bring to a category brief.</p>
+            <dl class="id-bullets">
+              <div><dt>Instruments</dt><dd>Acoustic & electric guitar, keyboard. Vocal training underway.</dd></div>
+              <div><dt>Production</dt><dd>Logic Pro X. Exploring AI-assisted arrangement and mixing tools.</dd></div>
+              <div><dt>Catalog</dt><dd>Covers and original works-in-progress shared on Instagram.</dd></div>
+              <div><dt>Philosophy</dt><dd>Process over polish. The practice itself is the work.</dd></div>
+            </dl>
+            <a href="https://www.instagram.com/tathastu_music/" target="_blank" rel="noreferrer" class="id-cta">
+              <span>Listen on Instagram</span>
+              <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORIZONTAL GALLERY: Themes & Field Notes -->
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery-head reveal">
+          <div>
+            <div class="eyebrow" style="margin-bottom: 1rem;">A reading list of obsessions</div>
+            <h2>Threads I'm <span class="italic">pulling.</span></h2>
+          </div>
+          <div class="eyebrow muted">Scroll horizontally →</div>
+        </div>
+      </div>
+      <div class="gallery-scroller reveal" id="gallery-scroller">
+        <article class="gallery-card">
+          <span class="num">01</span>
+          <div class="kicker">Procurement × AI</div>
+          <h3>Autonomous commerce and the new buyer.</h3>
+          <p>When agents do the negotiating, what is the sourcing manager's craft? Notes on the next decade of category strategy.</p>
+        </article>
+        <article class="gallery-card">
+          <span class="num">02</span>
+          <div class="kicker">Method</div>
+          <h3>The story inside the spend cube.</h3>
+          <p>Extracting narrative from category data — and why the best market intelligence reads like fiction.</p>
+        </article>
+        <article class="gallery-card">
+          <span class="num">03</span>
+          <div class="kicker">Three Astral</div>
+          <h3>World-building as a discipline.</h3>
+          <p>Reflections on writing a novel about dual existence while leading a day job grounded in primary data.</p>
+        </article>
+        <article class="gallery-card">
+          <span class="num">04</span>
+          <div class="kicker">Music</div>
+          <h3>Practice as a method of thought.</h3>
+          <p>What twenty minutes on a fretboard teaches about negotiating a multi-supplier global contract.</p>
+        </article>
+        <article class="gallery-card">
+          <span class="num">05</span>
+          <div class="kicker">Reading</div>
+          <p class="quote">Books currently on the desk: works on consciousness, supplier risk, and the craft of melody.</p>
+        </article>
+        <article class="gallery-card">
+          <span class="num">06</span>
+          <div class="kicker">Open invitation</div>
+          <h3>Looking for collaborators.</h3>
+          <p>If any of these threads resonate — particularly the intersection of analytical work and creative practice — please write.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- DIVIDER -->
+    <div class="divider-band" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/divider-stars-jurTUarM9xLoVxJG2TsDfv.webp')" aria-hidden="true"></div>
+
+    <!-- ESSAYS -->
+    <section id="essays" class="essays">
+      <div class="container">
+        <div class="essays-head reveal">
+          <div>
+            <div class="eyebrow" style="margin-bottom: 1rem;">Field Notes — Bi-weekly Substack</div>
+            <h2>Field <span class="italic">notes.</span></h2>
+          </div>
+          <a href="#contact" class="brass-link" style="font-size: 0.9rem;">Subscribe →</a>
+        </div>
+        <div class="essays-grid">
+          <article class="essay-card reveal">
+            <div class="top"><span class="num">01</span><span class="tag">Forthcoming</span></div>
+            <div class="eyebrow">Procurement × AI</div>
+            <h3>When the agent becomes the buyer.</h3>
+            <p>Autonomous commerce is no longer hypothetical. What happens to category sourcing when the agent is making the call?</p>
+            <div class="read">Read when published <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
+          </article>
+          <article class="essay-card reveal reveal-d1">
+            <div class="top"><span class="num">02</span><span class="tag">Forthcoming</span></div>
+            <div class="eyebrow">Method</div>
+            <h3>The story inside the spend cube.</h3>
+            <p>A working note on extracting narrative from category data — and why the best market intelligence reads like fiction.</p>
+            <div class="read">Read when published <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
+          </article>
+          <article class="essay-card reveal reveal-d2">
+            <div class="top"><span class="num">03</span><span class="tag">Forthcoming</span></div>
+            <div class="eyebrow">Cross-pollination</div>
+            <h3>Composing a sourcing strategy.</h3>
+            <p>What disciplined practice on a fretboard taught me about negotiating a multi-supplier global contract.</p>
+            <div class="read">Read when published <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="contact-bg" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-data-NBZhmVMH4KXnqjbEP3g396.webp')"></div>
+      <div class="container contact-grid">
+        <div class="contact-left reveal">
+          <div class="eyebrow" style="margin-bottom: 1.5rem;">Correspondence</div>
+          <h2>Let's <span class="italic">talk.</span></h2>
+          <p class="contact-lead">Whether it's a category brief, a book signing, a podcast, or just a conversation about where data and storytelling meet — I read every note.</p>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:hello@tathastunaranje.com">
+              <span class="left">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                hello@tathastunaranje.com
+              </span>
+              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+            <a class="contact-link" target="_blank" rel="noreferrer" href="https://in.linkedin.com/in/tathastu-naranje">
+              <span class="left">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                /in/tathastu-naranje
+              </span>
+              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+            <a class="contact-link" target="_blank" rel="noreferrer" href="https://www.instagram.com/tathastu_music/">
+              <span class="left">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                @tathastu_music
+              </span>
+              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right reveal reveal-d1">
+          <div class="newsletter-card">
+            <div class="eyebrow" style="margin-bottom: 1rem;">Field Notes — Newsletter</div>
+            <h3>Bi-weekly briefings from the desk of a Renaissance Consultant.</h3>
+            <p>Market intelligence essays, supplier landscape notes, and the occasional meditation on writing and music. No filler. Unsubscribe anytime.</p>
+            <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ On the list'; this.querySelector('button').disabled=true;">
+              <input type="email" required placeholder="your@email.com"/>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SEAL FOOTER -->
+  <footer class="seal-footer">
+    <div class="container">
+      <img class="seal" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/seal-emblem-KAzrdzXaHV4aVuJBaKgcm6.webp" alt="TN Seal" loading="lazy"/>
+      <div class="footer-words">
+        Finding the <span class="italic">story.</span>
+      </div>
+      <div class="footer-meta">
+        <span>© 2026 Tathastu Naranje</span>
+        <span>Mumbai, India</span>
+        <span class="brass">Built by Tathastu</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ============= CUSTOM CURSOR =============
+    (function() {
+      const dot = document.getElementById('cursor-dot');
+      const ring = document.getElementById('cursor-ring');
+      let mx = 0, my = 0, rx = 0, ry = 0;
+      window.addEventListener('mousemove', (e) => {
+        mx = e.clientX; my = e.clientY;
+        dot.style.transform = `translate3d(${mx - 3}px, ${my - 3}px, 0)`;
+      }, { passive: true });
+      function animateRing() {
+        rx += (mx - rx) * 0.18;
+        ry += (my - ry) * 0.18;
+        ring.style.transform = `translate3d(${rx - 18}px, ${ry - 18}px, 0)`;
+        requestAnimationFrame(animateRing);
+      }
+      animateRing();
+      document.querySelectorAll('a, button, input[type=submit]').forEach(el => {
+        el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
+        el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
+      });
+    })();
+
+    // ============= HEADER SCROLL + PROGRESS =============
+    const header = document.getElementById('site-header');
+    const progress = document.getElementById('progress');
+    const onScroll = () => {
+      if (window.scrollY > 60) header.classList.add('scrolled'); else header.classList.remove('scrolled');
+      const docH = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docH > 0 ? (window.scrollY / docH) * 100 : 0;
+      progress.style.width = pct + '%';
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // ============= HERO PARALLAX =============
+    const heroBg = document.getElementById('hero-bg-img');
+    if (heroBg) {
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY * 0.22;
+        heroBg.style.transform = `translateY(${y}px)`;
+      }, { passive: true });
+    }
+
+    // ============= HERO CHAR REVEAL =============
+    document.querySelectorAll('.char-reveal').forEach(el => {
+      const text = el.getAttribute('data-text') || el.textContent;
+      el.textContent = '';
+      [...text].forEach((c, i) => {
+        const span = document.createElement('span');
+        span.className = 'char';
+        span.textContent = c === ' ' ? '\u00A0' : c;
+        span.style.transitionDelay = (i * 35) + 'ms';
+        el.appendChild(span);
+      });
+      // Small delay so font has loaded
+      setTimeout(() => el.classList.add('in'), 100);
+    });
+    // Safety: force-reveal characters after 1.5s
+    setTimeout(() => {
+      document.querySelectorAll('.char-reveal:not(.in)').forEach(el => el.classList.add('in'));
+    }, 1500);
+
+    // ============= ROTATING TAGLINE =============
+    const taglines = document.querySelectorAll('#tagline-wrap .tagline');
+    const counter = document.getElementById('tagline-counter');
+    let tagIdx = 0;
+    if (taglines.length > 0) {
+      taglines[0].classList.add('active');
+      setInterval(() => {
+        taglines[tagIdx].classList.remove('active');
+        taglines[tagIdx].classList.add('exit');
+        const prev = tagIdx;
+        tagIdx = (tagIdx + 1) % taglines.length;
+        taglines[tagIdx].classList.remove('exit');
+        taglines[tagIdx].classList.add('active');
+        if (counter) counter.textContent = String(tagIdx + 1).padStart(2, '0') + ' / 03';
+        setTimeout(() => taglines[prev].classList.remove('exit'), 1000);
+      }, 3400);
+    }
+
+    // ============= REVEAL ON SCROLL =============
+    function revealAll() {
+      document.querySelectorAll('.reveal, .reveal-mask').forEach(el => el.classList.add('in'));
+    }
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            io.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -10% 0px', threshold: 0.01 });
+      document.querySelectorAll('.reveal:not(.in), .reveal-mask:not(.in)').forEach((el) => io.observe(el));
+      // Safety: any element still hidden after 4s gets revealed (handles slow image loads / odd viewports)
+      setTimeout(revealAll, 4000);
+    } else {
+      revealAll();
+    }
+
+    // ============= LIVE MUMBAI CLOCK =============
+    function updateClock() {
+      const now = new Date();
+      const fmt = new Intl.DateTimeFormat('en-IN', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: false });
+      const t = fmt.format(now);
+      const el = document.getElementById('local-time');
+      if (el) el.textContent = t + ' IST';
+    }
+    updateClock();
+    setInterval(updateClock, 30000);
+
+    // ============= CURRENT-STATUS ROTATOR =============
+    const statuses = [
+      'studying autonomous commerce',
+      'drafting volume II',
+      'practicing scales',
+      'reading on consciousness',
+      'building field notes'
+    ];
+    let sIdx = 0;
+    const nowEl = document.getElementById('now-status');
+    setInterval(() => {
+      sIdx = (sIdx + 1) % statuses.length;
+      if (nowEl) {
+        nowEl.style.opacity = '0';
+        setTimeout(() => { nowEl.textContent = statuses[sIdx]; nowEl.style.opacity = '1'; }, 280);
+      }
+    }, 4200);
+    if (nowEl) nowEl.style.transition = 'opacity 400ms cubic-bezier(0.22,1,0.36,1)';
+
+    // ============= MINIMAP ACTIVE STATE =============
+    const sections = document.querySelectorAll('[data-section], #top, #essays, #contact');
+    const mmLinks = document.querySelectorAll('#minimap a');
+    if ('IntersectionObserver' in window) {
+      const mmObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            mmLinks.forEach(l => l.classList.toggle('active', l.dataset.section === id));
+          }
+        });
+      }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+      sections.forEach(s => mmObserver.observe(s));
+    }
+
+    // ============= THEME TOGGLE =============
+    const root = document.documentElement;
+    const themeBtn = document.getElementById('theme-toggle');
+    const iconDark = document.getElementById('theme-icon-dark');
+    const iconLight = document.getElementById('theme-icon-light');
+    function setTheme(t) {
+      root.setAttribute('data-theme', t);
+      try { localStorage.setItem('tn-theme', t); } catch(e) {}
+      if (t === 'light') { iconDark.style.display = 'none'; iconLight.style.display = 'block'; }
+      else { iconDark.style.display = 'block'; iconLight.style.display = 'none'; }
+    }
+    try {
+      const saved = localStorage.getItem('tn-theme');
+      if (saved) setTheme(saved);
+    } catch(e) {}
+    themeBtn.addEventListener('click', () => {
+      const cur = root.getAttribute('data-theme');
+      setTheme(cur === 'dark' ? 'light' : 'dark');
+    });
+  </script>
+</body>
+</html>
