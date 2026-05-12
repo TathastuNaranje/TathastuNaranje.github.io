@@ -4,23 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
   <title>Tathastu Naranje — Renaissance Consultant</title>
-  <meta name="description" content="Tathastu Naranje — Market Intelligence Consultant, author of Three Astral, and musician. Finding the story within the system." />
+  <meta name="description" content="Tathastu Naranje — Market Intelligence Consultant, musician, author of Three Astral, and AI researcher. Finding the story within the system." />
   <meta name="author" content="Tathastu Naranje" />
   <meta name="theme-color" content="#0A0A0A" />
-  <meta property="og:title" content="Tathastu Naranje — Renaissance Consultant" />
-  <meta property="og:description" content="Market Intelligence Consultant. Author of Three Astral. Musician." />
+  <meta property="og:title" content="Tathastu — Renaissance Consultant" />
+  <meta property="og:description" content="Market Intelligence Consultant. Musician. Author of Three Astral. AI Researcher." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/seal-emblem-KAzrdzXaHV4aVuJBaKgcm6.webp" />
+  <meta property="og:image" content="https://files.manuscdn.com/user_upload_by_module/session_file/310519663344570243/NeZuCxvnXWaLUENh.png" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230A0A0A'/%3E%3Ctext x='50' y='68' font-family='Georgia,serif' font-size='62' font-style='italic' text-anchor='middle' fill='%23B8956A'%3ET%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200..900;1,9..144,200..900&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <style>
     /* ============================================================
-     *  DESIGN SYSTEM — "Editorial Intelligence" v2 (Award Edition)
-     *  Movement: Editorial Modernism × Swiss Typography
-     *  Type: Fraunces · Inter Tight · JetBrains Mono
-     *  Palette: Ink · Bone · Astral Indigo · Brass Gold
+     *  TATHASTU — Personal Website
+     *  Design: Editorial Modernism × Swiss Typography
      *  Built by Tathastu
      * ============================================================ */
 
@@ -30,7 +28,6 @@
       --bone: #F5F1EA;
       --bone-2: #E8E2D5;
       --indigo: #1A1F3A;
-      --indigo-2: #0F1326;
       --brass: #B8956A;
       --brass-2: #D4B689;
       --border: rgba(184, 149, 106, 0.16);
@@ -45,7 +42,6 @@
       --bone: #0A0A0A;
       --bone-2: #1A1A1A;
       --indigo: #DDE0EA;
-      --indigo-2: #C9CCD9;
       --brass: #8B6A3F;
       --brass-2: #6E5230;
       --border: rgba(139, 106, 63, 0.22);
@@ -59,7 +55,6 @@
       --font-body: "Inter Tight", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
       --ease: cubic-bezier(0.22, 1, 0.36, 1);
-      --ease-soft: cubic-bezier(0.4, 0, 0.2, 1);
       --grid: 1440px;
     }
 
@@ -91,9 +86,8 @@
     @media (min-width: 768px) { .container { padding: 0 2.5rem; } }
     @media (min-width: 1280px) { .container { padding: 0 4rem; } }
 
-    /* Typography utilities */
+    /* Typography */
     .display { font-family: var(--font-display); font-weight: 300; letter-spacing: -0.035em; line-height: 0.94; }
-    .display-italic { font-family: var(--font-display); font-style: italic; font-weight: 300; letter-spacing: -0.025em; }
     .eyebrow {
       font-family: var(--font-mono);
       font-size: 0.7rem;
@@ -138,12 +132,12 @@
       inset: 0;
       pointer-events: none;
       z-index: 100;
-      opacity: 0.07;
+      opacity: 0.06;
       mix-blend-mode: overlay;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.95  0 0 0 0 0.94  0 0 0 0 0.92  0 0 0 0.5 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
     }
 
-    /* Brass animated link */
+    /* Brass link */
     .brass-link {
       position: relative;
       display: inline-block;
@@ -162,29 +156,12 @@
     .brass-link:hover { color: var(--brass); }
     .brass-link:hover::after { transform: scaleX(1); transform-origin: left; }
 
-    /* Reveal animations */
+    /* Reveal */
     .reveal { opacity: 0; transform: translateY(40px); transition: opacity 1.4s var(--ease), transform 1.4s var(--ease); }
     .reveal.in { opacity: 1; transform: translateY(0); }
-    /* No-JS / fallback: show after 3s no matter what */
-    @media (prefers-reduced-motion: reduce) {
-      .reveal { opacity: 1; transform: none; }
-      .char-reveal .char { opacity: 1; transform: none; }
-    }
-    .reveal-d1 { transition-delay: 0.12s; } .reveal-d2 { transition-delay: 0.24s; } .reveal-d3 { transition-delay: 0.36s; } .reveal-d4 { transition-delay: 0.48s; }
-    .reveal-mask { overflow: hidden; }
-    .reveal-mask > * { display: block; transform: translateY(110%); transition: transform 1.3s var(--ease); }
-    .reveal-mask.in > * { transform: translateY(0); }
+    .reveal-d1 { transition-delay: 0.12s; } .reveal-d2 { transition-delay: 0.24s; } .reveal-d3 { transition-delay: 0.36s; }
 
-    .char-reveal { display: inline-block; }
-    .char-reveal .char {
-      display: inline-block;
-      opacity: 0;
-      transform: translateY(40px);
-      transition: opacity 700ms var(--ease), transform 900ms var(--ease);
-    }
-    .char-reveal.in .char { opacity: 1; transform: translateY(0); }
-
-    /* TOP BAR — local time + currently */
+    /* Top status bar */
     .topbar {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -216,11 +193,9 @@
       white-space: nowrap;
       text-align: center;
     }
-    @media (max-width: 720px) {
-      .topbar-item.location, .topbar-now { display: none; }
-    }
+    @media (max-width: 720px) { .topbar-item.location, .topbar-now { display: none; } }
 
-    /* HEADER */
+    /* Header */
     header.site {
       position: fixed;
       top: 36px; left: 0; right: 0;
@@ -242,17 +217,13 @@
       justify-content: space-between;
       gap: 1.5rem;
     }
-    .nav-brand { display: flex; align-items: baseline; gap: 0.8rem; }
-    .nav-brand .display { font-size: 1.3rem; }
-    .nav-brand .mark {
-      width: 28px; height: 28px;
-      border: 1px solid var(--brass);
-      border-radius: 50%;
-      display: inline-flex; align-items: center; justify-content: center;
-      color: var(--brass);
+    .nav-brand {
       font-family: var(--font-display);
-      font-style: italic;
-      font-size: 0.85rem;
+      font-weight: 300;
+      font-size: 1.7rem;
+      letter-spacing: -0.02em;
+      color: var(--brass);
+      line-height: 1;
     }
     nav.menu { display: none; gap: 2rem; font-size: 0.9rem; }
     @media (min-width: 920px) { nav.menu { display: flex; } }
@@ -278,7 +249,7 @@
     }
     .cta-button:hover { background: var(--brass); color: var(--ink); }
 
-    /* SECTION MINIMAP — floating side nav */
+    /* Section minimap */
     .minimap {
       position: fixed;
       right: 1.5rem;
@@ -299,16 +270,8 @@
       color: var(--muted);
       transition: color 400ms var(--ease);
     }
-    .minimap a .line {
-      width: 20px; height: 1px;
-      background: var(--muted);
-      transition: width 500ms var(--ease), background 400ms var(--ease);
-    }
-    .minimap a .label {
-      opacity: 0;
-      transform: translateX(-8px);
-      transition: opacity 400ms var(--ease), transform 400ms var(--ease);
-    }
+    .minimap a .line { width: 20px; height: 1px; background: var(--muted); transition: width 500ms var(--ease), background 400ms var(--ease); }
+    .minimap a .label { opacity: 0; transform: translateX(-8px); transition: opacity 400ms var(--ease), transform 400ms var(--ease); }
     .minimap a:hover, .minimap a.active { color: var(--brass); }
     .minimap a:hover .line, .minimap a.active .line { background: var(--brass); width: 40px; }
     .minimap a:hover .label, .minimap a.active .label { opacity: 1; transform: translateX(0); }
@@ -331,22 +294,22 @@
     }
     @media (min-width: 768px) { .hero-bg { display: flex; } }
     .hero-bg-img {
-      width: 55%; height: 100%;
+      width: 60%; height: 100%;
       background-size: cover;
-      background-position: center;
-      -webkit-mask-image: linear-gradient(to left, black 25%, transparent 95%);
-      mask-image: linear-gradient(to left, black 25%, transparent 95%);
+      background-position: center top;
+      -webkit-mask-image: linear-gradient(to left, black 30%, transparent 100%);
+      mask-image: linear-gradient(to left, black 30%, transparent 100%);
       transition: transform 100ms linear;
     }
     .hero-bg-mobile {
       position: absolute;
       inset: 0;
       background-size: cover;
-      background-position: center;
-      opacity: 0.28;
+      background-position: center top;
+      opacity: 0.35;
     }
     @media (min-width: 768px) { .hero-bg-mobile { display: none; } }
-    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, var(--bg), color-mix(in srgb, var(--bg) 80%, transparent) 45%, transparent 75%); }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to right, var(--bg), color-mix(in srgb, var(--bg) 85%, transparent) 45%, transparent 80%); }
 
     .hero-inner {
       position: relative;
@@ -359,20 +322,10 @@
     @media (min-width: 768px) { .hero-rail { display: flex; justify-content: center; padding-top: 1rem; } }
     .rule-vertical { width: 1px; height: 16rem; background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--brass) 70%, transparent), transparent); }
     .hero-content { grid-column: 1 / -1; }
-    @media (min-width: 768px) { .hero-content { grid-column: 2 / span 9; } }
+    @media (min-width: 768px) { .hero-content { grid-column: 2 / span 8; } }
 
-    .hero-volume {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 2.5rem;
-    }
-    .hero-volume .roman {
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: 0.85rem;
-      color: var(--brass);
-    }
+    .hero-volume { display: inline-flex; align-items: center; gap: 0.75rem; margin-bottom: 2.5rem; }
+    .hero-volume .roman { font-family: var(--font-display); font-style: italic; font-size: 0.85rem; color: var(--brass); }
 
     .hero h1 {
       font-family: var(--font-display);
@@ -385,22 +338,11 @@
     .hero h1 .word { display: block; }
     .hero h1 .word.italic { font-style: italic; color: var(--brass); margin-top: -0.1em; }
 
-    .currently-row {
-      margin-top: 3rem;
-      display: flex;
-      align-items: baseline;
-      gap: 0.85rem;
-      margin-bottom: 1.5rem;
-    }
+    .currently-row { margin-top: 3rem; display: flex; align-items: baseline; gap: 0.85rem; margin-bottom: 1.5rem; }
     .currently-row .rule { display: inline-block; width: 3rem; height: 1px; background: var(--brass); }
-    .currently-row .num {
-      font-family: var(--font-mono);
-      font-size: 0.7rem;
-      color: var(--muted);
-      letter-spacing: 0.18em;
-    }
+    .currently-row .num { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); letter-spacing: 0.18em; }
 
-    .tagline-wrap { height: 2.8rem; position: relative; overflow: hidden; }
+    .tagline-wrap { height: 3rem; position: relative; overflow: hidden; }
     .tagline {
       position: absolute;
       inset: 0;
@@ -420,13 +362,7 @@
     .hero-desc { margin-top: 2rem; font-size: 1rem; max-width: 32rem; color: var(--muted); }
     @media (min-width: 768px) { .hero-desc { font-size: 1.0625rem; } }
 
-    .hero-actions {
-      margin-top: 3rem;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 1.25rem;
-    }
+    .hero-actions { margin-top: 3rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1.25rem; }
     .btn-primary {
       display: inline-flex;
       align-items: center;
@@ -457,27 +393,17 @@
     .btn-primary .arrow { transition: transform 500ms var(--ease); }
     .btn-primary:hover .arrow { transform: translate(3px, -3px); }
 
-    .scroll-cue {
-      position: absolute;
-      bottom: 2rem;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 0.6rem;
-    }
+    .scroll-cue { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.6rem; }
     .scroll-cue .eyebrow { font-size: 0.6rem; }
     .scroll-cue-line {
-      width: 1px;
-      height: 3.5rem;
+      width: 1px; height: 3.5rem;
       background: linear-gradient(to bottom, var(--brass), transparent);
       transform-origin: top;
       animation: pulseLine 2.4s ease-in-out infinite;
     }
     @keyframes pulseLine { 0%,100% { transform: scaleY(1); } 50% { transform: scaleY(0.35); } }
 
-    /* MARQUEE */
+    /* Marquee */
     .marquee {
       border-top: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
@@ -511,7 +437,7 @@
     .marquee-track .italic { font-style: italic; color: var(--brass); }
     @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-    /* MANIFESTO */
+    /* Manifesto */
     .manifesto { padding: 5rem 0; border-bottom: 1px solid var(--border); }
     .manifesto p {
       font-family: var(--font-display);
@@ -524,7 +450,41 @@
     .manifesto .muted-large { color: var(--muted); }
     .manifesto .italic-brass { font-style: italic; color: var(--brass); }
 
-    /* IDENTITY */
+    /* Practice & Discipline quote section */
+    .discipline {
+      padding: 6rem 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--ink-2);
+      position: relative;
+      overflow: hidden;
+    }
+    .discipline::before {
+      content: "";
+      position: absolute;
+      top: 2rem; left: 2rem;
+      font-family: var(--font-display);
+      font-style: italic;
+      font-size: 12rem;
+      line-height: 0.8;
+      color: var(--brass);
+      opacity: 0.08;
+      content: "“";
+    }
+    .discipline .container { position: relative; z-index: 1; }
+    .discipline .eyebrow { margin-bottom: 1.5rem; }
+    .discipline h2 {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(1.6rem, 3.8vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      max-width: 60rem;
+      margin-bottom: 2rem;
+    }
+    .discipline h2 .italic { font-style: italic; color: var(--brass); }
+    .discipline .attribution { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
+
+    /* Identity sections */
     .identity { padding: 7rem 0; position: relative; }
     @media (min-width: 768px) { .identity { padding: 10rem 0; } }
     .id-num-bg {
@@ -543,7 +503,6 @@
     }
     .identity.left .id-num-bg { left: -2vw; }
     .identity.right .id-num-bg { right: -2vw; }
-
     .identity-grid {
       position: relative;
       z-index: 1;
@@ -638,76 +597,7 @@
     .id-cta .arrow { color: var(--brass); transition: transform 500ms var(--ease); }
     .id-cta:hover .arrow { transform: translate(4px, -4px); }
 
-    /* HORIZONTAL GALLERY */
-    .gallery {
-      padding: 6rem 0 7rem;
-      background: var(--ink-2);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      position: relative;
-      overflow: hidden;
-    }
-    .gallery-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem; }
-    .gallery-head h2 { font-family: var(--font-display); font-weight: 300; font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -0.03em; line-height: 1; }
-    .gallery-head h2 .italic { font-style: italic; color: var(--brass); }
-    .gallery-scroller {
-      display: flex;
-      gap: 1.25rem;
-      overflow-x: auto;
-      padding: 0 1.5rem 1.5rem;
-      scroll-snap-type: x mandatory;
-      scrollbar-width: thin;
-      scrollbar-color: var(--brass) transparent;
-    }
-    .gallery-scroller::-webkit-scrollbar { height: 6px; }
-    .gallery-scroller::-webkit-scrollbar-track { background: var(--border); }
-    .gallery-scroller::-webkit-scrollbar-thumb { background: var(--brass); border-radius: 3px; }
-    .gallery-card {
-      flex: 0 0 auto;
-      width: 320px;
-      scroll-snap-align: start;
-      border: 1px solid var(--border-strong);
-      background: var(--bg);
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      transition: border-color 500ms var(--ease), transform 600ms var(--ease);
-    }
-    @media (min-width: 768px) { .gallery-card { width: 380px; padding: 2rem; } }
-    .gallery-card:hover { border-color: var(--brass); transform: translateY(-4px); }
-    .gallery-card .num {
-      font-family: var(--font-display);
-      font-weight: 300;
-      font-size: 2rem;
-      color: var(--brass);
-      font-style: italic;
-    }
-    .gallery-card .kicker {
-      font-family: var(--font-mono);
-      font-size: 0.65rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .gallery-card h3 {
-      font-family: var(--font-display);
-      font-weight: 300;
-      font-size: 1.6rem;
-      line-height: 1.12;
-      letter-spacing: -0.02em;
-    }
-    .gallery-card p { font-size: 0.875rem; line-height: 1.55; color: var(--muted); }
-    .gallery-card .quote {
-      font-family: var(--font-display);
-      font-style: italic;
-      font-size: 1rem;
-      line-height: 1.4;
-      color: var(--fg);
-    }
-    .gallery-card .quote::before { content: "“"; color: var(--brass); font-size: 1.5em; line-height: 0; vertical-align: -0.2em; margin-right: 0.1em; }
-
-    /* BOOK FEATURE */
+    /* Book feature */
     .book {
       position: relative;
       padding: 7rem 0;
@@ -722,8 +612,9 @@
       inset: 0;
       background-size: cover;
       background-position: center;
-      opacity: 0.22;
+      opacity: 0.18;
       pointer-events: none;
+      filter: blur(2px);
     }
     .book-inner {
       position: relative;
@@ -775,50 +666,46 @@
     .buy-link .arrow { width: 11px; height: 11px; transition: transform 500ms var(--ease); }
     .buy-link:hover .arrow { transform: translate(2px, -2px); }
 
-    /* ESSAYS */
-    .essays { padding: 7rem 0; }
-    @media (min-width: 768px) { .essays { padding: 10rem 0; } }
-    .essays-head { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 4rem; flex-wrap: wrap; gap: 1rem; }
-    .essays-head h2 { font-family: var(--font-display); font-weight: 300; font-size: clamp(2.5rem, 6vw, 5rem); letter-spacing: -0.03em; line-height: 1; }
-    .essays-head h2 .italic { font-style: italic; color: var(--brass); }
-    .essays-grid { display: grid; grid-template-columns: 1fr; gap: 1px; background: var(--border-strong); }
-    @media (min-width: 768px) { .essays-grid { grid-template-columns: repeat(3, 1fr); } }
-    .essay-card { background: var(--bg); padding: 2.5rem; transition: background 700ms var(--ease); position: relative; overflow: hidden; }
-    .essay-card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, transparent, color-mix(in srgb, var(--brass) 4%, transparent));
-      opacity: 0;
-      transition: opacity 600ms var(--ease);
-      pointer-events: none;
+    /* AI Unlocked newsletter highlight */
+    .newsletter-feature { padding: 7rem 0; border-bottom: 1px solid var(--border); }
+    .nf-grid { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
+    @media (min-width: 768px) { .nf-grid { grid-template-columns: 5fr 7fr; gap: 4rem; } }
+    .nf-left .eyebrow { margin-bottom: 1rem; }
+    .nf-left h2 {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      line-height: 1;
+      letter-spacing: -0.03em;
+      margin-bottom: 2rem;
     }
-    .essay-card:hover::after { opacity: 1; }
-    .essay-card .top { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem; }
-    .essay-card .num { font-family: var(--font-display); font-weight: 300; font-style: italic; font-size: 2rem; color: var(--brass); }
-    .essay-card .tag { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass); border: 1px solid rgba(184,149,106,0.4); padding: 0.25rem 0.55rem; }
-    .essay-card h3 { font-family: var(--font-display); font-weight: 300; font-size: 1.65rem; line-height: 1.12; letter-spacing: -0.022em; margin: 1rem 0; }
-    @media (min-width: 768px) { .essay-card h3 { font-size: 1.85rem; } }
-    .essay-card p { font-size: 0.875rem; line-height: 1.6; color: var(--muted); }
-    .essay-card .read { display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 2rem; font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass); }
-
-    /* DIVIDER STAR BAND */
-    .divider-band {
-      height: 200px;
-      background-size: cover;
-      background-position: center;
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      position: relative;
+    .nf-left h2 .italic { font-style: italic; color: var(--brass); }
+    .nf-left p {
+      font-family: var(--font-display); font-weight: 300; font-style: italic;
+      font-size: 1.3rem; line-height: 1.4; color: var(--muted);
+      max-width: 28rem; margin-bottom: 2rem;
     }
-    .divider-band::before, .divider-band::after { content: ""; position: absolute; left: 0; right: 0; height: 60px; pointer-events: none; }
-    .divider-band::before { top: 0; background: linear-gradient(to bottom, var(--bg), transparent); }
-    .divider-band::after { bottom: 0; background: linear-gradient(to top, var(--bg), transparent); }
+    .nf-stats { display: flex; gap: 2.5rem; margin-bottom: 2rem; }
+    .nf-stat .num { font-family: var(--font-display); font-weight: 300; font-size: 2.5rem; color: var(--brass); line-height: 1; }
+    .nf-stat .label { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); margin-top: 0.3rem; }
+    .nf-right { display: grid; gap: 1rem; }
+    .nf-card {
+      border: 1px solid var(--border-strong);
+      padding: 1.5rem;
+      transition: border-color 500ms var(--ease), background 500ms var(--ease);
+    }
+    .nf-card:hover { border-color: var(--brass); background: color-mix(in srgb, var(--brass) 5%, transparent); }
+    .nf-card .top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; }
+    .nf-card .edition { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--brass); }
+    .nf-card .date { font-family: var(--font-mono); font-size: 0.65rem; color: var(--muted); }
+    .nf-card h3 {
+      font-family: var(--font-display); font-weight: 300;
+      font-size: 1.3rem; line-height: 1.2; letter-spacing: -0.015em;
+    }
 
-    /* CONTACT */
+    /* Contact */
     .contact { padding: 7rem 0; border-top: 1px solid var(--border); position: relative; overflow: hidden; }
     @media (min-width: 768px) { .contact { padding: 10rem 0; } }
-    .contact-bg { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0.13; pointer-events: none; }
     .contact-grid { position: relative; display: grid; grid-template-columns: repeat(12, 1fr); gap: 2.5rem; }
     .contact-left { grid-column: 1 / -1; }
     .contact-right { grid-column: 1 / -1; }
@@ -832,12 +719,11 @@
     .contact-links { max-width: 30rem; }
     .contact-link { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; border-bottom: 1px solid var(--border-strong); transition: border-color 500ms var(--ease); }
     .contact-link:hover { border-bottom-color: var(--brass); }
-    .contact-link .left { display: flex; align-items: center; gap: 1rem; font-family: var(--font-mono); font-size: 0.85rem; }
+    .contact-link .left { display: flex; align-items: center; gap: 1rem; font-family: var(--font-mono); font-size: 0.85rem; word-break: break-all; }
     .contact-link .icon { width: 16px; height: 16px; color: var(--brass); flex-shrink: 0; }
-    .contact-link .arrow { width: 16px; height: 16px; transition: transform 500ms var(--ease); }
+    .contact-link .arrow { width: 16px; height: 16px; transition: transform 500ms var(--ease); flex-shrink: 0; }
     .contact-link:hover .arrow { transform: translate(3px, -3px); }
-
-    .newsletter-card {
+    .contact-card {
       border: 1px solid var(--border-strong);
       padding: 2.5rem;
       background: color-mix(in srgb, var(--bg) 60%, transparent);
@@ -845,57 +731,37 @@
       -webkit-backdrop-filter: blur(10px);
       position: relative;
     }
-    .newsletter-card::before {
-      content: "";
-      position: absolute;
-      top: -1px; left: -1px;
-      width: 30px; height: 30px;
-      border-top: 1px solid var(--brass);
-      border-left: 1px solid var(--brass);
+    .contact-card::before { content: ""; position: absolute; top: -1px; left: -1px; width: 30px; height: 30px; border-top: 1px solid var(--brass); border-left: 1px solid var(--brass); }
+    .contact-card::after { content: ""; position: absolute; bottom: -1px; right: -1px; width: 30px; height: 30px; border-bottom: 1px solid var(--brass); border-right: 1px solid var(--brass); }
+    .contact-card .eyebrow { margin-bottom: 1rem; }
+    .contact-card h3 { font-family: var(--font-display); font-weight: 300; font-size: 1.7rem; line-height: 1.15; letter-spacing: -0.022em; margin-bottom: 1rem; }
+    .contact-card p { font-size: 0.875rem; line-height: 1.6; color: var(--muted); margin-bottom: 1.5rem; }
+    .contact-card .cta-line {
+      display: inline-flex; align-items: center; gap: 0.75rem;
+      font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase;
+      color: var(--brass); border-bottom: 1px solid var(--brass); padding-bottom: 0.3rem;
     }
-    .newsletter-card::after {
-      content: "";
-      position: absolute;
-      bottom: -1px; right: -1px;
-      width: 30px; height: 30px;
-      border-bottom: 1px solid var(--brass);
-      border-right: 1px solid var(--brass);
-    }
-    .newsletter-card h3 { font-family: var(--font-display); font-weight: 300; font-size: 1.95rem; line-height: 1.12; letter-spacing: -0.022em; margin: 1rem 0; }
-    .newsletter-card p { font-size: 0.875rem; line-height: 1.6; color: var(--muted); margin-bottom: 1.5rem; }
-    .newsletter-card form { display: flex; flex-direction: column; gap: 0.75rem; }
-    .newsletter-card input { width: 100%; background: transparent; border: 1px solid var(--border-strong); padding: 0.85rem 1rem; color: var(--fg); font-family: var(--font-mono); font-size: 0.85rem; outline: none; transition: border-color 500ms var(--ease); }
-    .newsletter-card input::placeholder { color: color-mix(in srgb, var(--fg) 40%, transparent); }
-    .newsletter-card input:focus { border-color: var(--brass); }
-    .newsletter-card button[type="submit"] { width: 100%; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.24em; text-transform: uppercase; border: 1px solid var(--brass); color: var(--brass); padding: 0.9rem 1rem; transition: background 500ms var(--ease), color 500ms var(--ease); }
-    .newsletter-card button[type="submit"]:hover { background: var(--brass); color: var(--ink); }
 
-    /* SEAL FOOTER */
-    .seal-footer {
-      padding: 5rem 0 3rem;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      position: relative;
+    /* Footer */
+    .seal-footer { padding: 5rem 0 3rem; border-top: 1px solid var(--border); text-align: center; position: relative; }
+    .seal-footer .seal-text {
+      font-family: var(--font-display);
+      font-weight: 300;
+      font-size: clamp(3rem, 9vw, 7rem);
+      letter-spacing: -0.04em;
+      color: var(--brass);
+      margin-bottom: 1rem;
     }
-    .seal-footer .seal {
-      width: 140px;
-      height: 140px;
-      margin: 0 auto 2.5rem;
-      opacity: 0.7;
-      transition: opacity 500ms var(--ease), transform 800ms var(--ease);
-      animation: slowSpin 60s linear infinite;
-    }
-    .seal-footer:hover .seal { opacity: 1; }
-    @keyframes slowSpin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
     .seal-footer .footer-words {
       font-family: var(--font-display);
       font-weight: 300;
-      font-size: clamp(2.5rem, 8vw, 6rem);
-      letter-spacing: -0.035em;
-      line-height: 0.95;
-      margin-bottom: 2rem;
+      font-style: italic;
+      font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: var(--muted);
+      margin-bottom: 3rem;
     }
-    .seal-footer .footer-words .italic { font-style: italic; color: var(--brass); }
     .seal-footer .footer-meta {
       display: flex;
       flex-wrap: wrap;
@@ -911,18 +777,8 @@
     }
     .seal-footer .footer-meta .brass { color: var(--brass); }
 
-    /* Progress bar */
-    .progress {
-      position: fixed;
-      top: 36px;
-      left: 0;
-      height: 2px;
-      width: 0%;
-      background: var(--brass);
-      z-index: 70;
-      transition: width 150ms linear;
-    }
-
+    /* Progress */
+    .progress { position: fixed; top: 36px; left: 0; height: 2px; width: 0%; background: var(--brass); z-index: 70; transition: width 150ms linear; }
   </style>
 </head>
 
@@ -936,12 +792,12 @@
     <div class="container topbar-inner">
       <div class="topbar-item location">
         <span class="dot"></span>
-        <span>Mumbai, IN</span>
+        <span>Bengaluru, IN</span>
         <span class="brass" id="local-time">—</span>
       </div>
       <div class="topbar-now"><span class="muted">Currently — </span><span class="brass" id="now-status">studying autonomous commerce</span></div>
       <div class="topbar-item">
-        <span>Available for select work</span>
+        <span>Available for hire — open to new roles</span>
         <span class="brass">→</span>
       </div>
     </div>
@@ -953,15 +809,13 @@
   <!-- Header -->
   <header class="site" id="site-header">
     <div class="container nav-inner">
-      <a href="#top" class="nav-brand">
-        <span class="mark">T</span>
-        <span class="display">Tathastu Naranje</span>
-      </a>
+      <a href="#top" class="nav-brand">Tathastu</a>
       <nav class="menu">
         <a href="#consultant" class="brass-link">Consultant</a>
-        <a href="#author" class="brass-link">Author</a>
         <a href="#musician" class="brass-link">Musician</a>
-        <a href="#essays" class="brass-link">Essays</a>
+        <a href="#author" class="brass-link">Author</a>
+        <a href="#ai" class="brass-link">AI Research</a>
+        <a href="#newsletter" class="brass-link">AI Unlocked</a>
         <a href="#contact" class="brass-link">Contact</a>
       </nav>
       <div class="nav-actions">
@@ -974,22 +828,23 @@
     </div>
   </header>
 
-  <!-- Section minimap (desktop only) -->
+  <!-- Section minimap -->
   <nav class="minimap" id="minimap">
     <a href="#top" data-section="top"><span class="line"></span><span class="label">Index</span></a>
     <a href="#consultant" data-section="consultant"><span class="line"></span><span class="label">01 — Consultant</span></a>
-    <a href="#author" data-section="author"><span class="line"></span><span class="label">02 — Author</span></a>
-    <a href="#musician" data-section="musician"><span class="line"></span><span class="label">03 — Musician</span></a>
-    <a href="#essays" data-section="essays"><span class="line"></span><span class="label">Essays</span></a>
+    <a href="#musician" data-section="musician"><span class="line"></span><span class="label">02 — Musician</span></a>
+    <a href="#author" data-section="author"><span class="line"></span><span class="label">03 — Author</span></a>
+    <a href="#ai" data-section="ai"><span class="line"></span><span class="label">04 — AI Research</span></a>
+    <a href="#newsletter" data-section="newsletter"><span class="line"></span><span class="label">AI Unlocked</span></a>
     <a href="#contact" data-section="contact"><span class="line"></span><span class="label">Contact</span></a>
   </nav>
 
   <main>
     <!-- HERO -->
     <section id="top" class="hero">
-      <div class="hero-bg-mobile" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-portrait-RjmzbWzEAASPTMGNEcXj45.webp')"></div>
+      <div class="hero-bg-mobile" style="background-image: url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663344570243/NeZuCxvnXWaLUENh.png')"></div>
       <div class="hero-bg">
-        <div class="hero-bg-img" id="hero-bg-img" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-portrait-RjmzbWzEAASPTMGNEcXj45.webp')"></div>
+        <div class="hero-bg-img" id="hero-bg-img" style="background-image: url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663344570243/NeZuCxvnXWaLUENh.png')"></div>
       </div>
       <div class="hero-overlay"></div>
       <div class="container hero-inner">
@@ -998,7 +853,7 @@
           <div class="reveal in">
             <div class="hero-volume">
               <span class="eyebrow">Volume I · Est. 2026</span>
-              <span class="roman">— Mumbai, India</span>
+              <span class="roman">— Bengaluru, India</span>
             </div>
           </div>
           <h1 class="reveal in">
@@ -1009,24 +864,23 @@
             <div class="currently-row">
               <span class="eyebrow">Currently</span>
               <span class="rule"></span>
-              <span class="num" id="tagline-counter">01 / 03</span>
+              <span class="num" id="tagline-counter">01 / 04</span>
             </div>
             <div class="tagline-wrap" id="tagline-wrap">
               <div class="tagline">Market Intelligence Consultant.</div>
-              <div class="tagline">Author of Three Astral.</div>
               <div class="tagline">Musician. Always learning.</div>
+              <div class="tagline">Author of Three Astral.</div>
+              <div class="tagline">AI Researcher.</div>
             </div>
             <p class="hero-desc">
-              A market intelligence consultant who finds the story within the system —
-              decoding global categories for procurement leaders, crafting parallel worlds in fiction,
-              and translating discipline into music.
+              I translate market signals into strategic advantage for procurement leaders. I play guitar and keyboard, study singing, and treat practice as the discipline behind every craft. I wrote a novel about consciousness and dual existence. I research how AI is reshaping work — and publish my findings every week.
             </p>
             <div class="hero-actions">
-              <a href="#book" class="btn-primary">
-                <span>Read the book</span>
+              <a href="#newsletter" class="btn-primary">
+                <span>Read AI Unlocked</span>
                 <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
               </a>
-              <a href="#essays" class="brass-link" style="font-size: 0.9rem;">Or read the essays →</a>
+              <a href="#book" class="brass-link" style="font-size: 0.9rem;">Or read the book →</a>
             </div>
           </div>
         </div>
@@ -1037,31 +891,43 @@
       </div>
     </section>
 
-    <!-- MARQUEE BAND -->
+    <!-- Marquee -->
     <div class="marquee" aria-hidden="true">
       <div class="marquee-track">
-        <span>Market Intelligence <span class="star">✦</span> <span class="italic">Speculative Fiction</span> <span class="star">✦</span> Strategic Sourcing <span class="star">✦</span> <span class="italic">Three Astral</span> <span class="star">✦</span> Logic Pro <span class="star">✦</span> <span class="italic">Renaissance Consultant</span> <span class="star">✦</span> Finding the Story <span class="star">✦</span></span>
-        <span>Market Intelligence <span class="star">✦</span> <span class="italic">Speculative Fiction</span> <span class="star">✦</span> Strategic Sourcing <span class="star">✦</span> <span class="italic">Three Astral</span> <span class="star">✦</span> Logic Pro <span class="star">✦</span> <span class="italic">Renaissance Consultant</span> <span class="star">✦</span> Finding the Story <span class="star">✦</span></span>
+        <span>Market Intelligence <span class="star">✦</span> <span class="italic">Music</span> <span class="star">✦</span> Strategic Sourcing <span class="star">✦</span> <span class="italic">Three Astral</span> <span class="star">✦</span> AI Research <span class="star">✦</span> <span class="italic">Practice</span> <span class="star">✦</span> Discipline <span class="star">✦</span> Story <span class="star">✦</span></span>
+        <span>Market Intelligence <span class="star">✦</span> <span class="italic">Music</span> <span class="star">✦</span> Strategic Sourcing <span class="star">✦</span> <span class="italic">Three Astral</span> <span class="star">✦</span> AI Research <span class="star">✦</span> <span class="italic">Practice</span> <span class="star">✦</span> Discipline <span class="star">✦</span> Story <span class="star">✦</span></span>
       </div>
     </div>
 
-    <!-- MANIFESTO -->
+    <!-- Manifesto -->
     <section class="manifesto">
       <div class="container reveal">
         <p>
           <span class="muted-large">I don't just find data —</span>
-          <span class="italic-brass display-italic">I find the story within it.</span>
+          <span class="italic-brass">I find the story within it.</span>
         </p>
       </div>
     </section>
 
+    <!-- Practice & Discipline -->
+    <section class="discipline">
+      <div class="container reveal">
+        <div class="eyebrow">A note on practice & discipline</div>
+        <h2>
+          Practice is the bridge between intention and craft. Every chord, every chapter, every category brief —
+          <span class="italic">the same discipline, applied differently.</span>
+        </h2>
+        <div class="attribution">— Working principle, kept in plain sight</div>
+      </div>
+    </section>
+
     <!-- CONSULTANT -->
-    <section id="consultant" class="identity left" data-section>
+    <section id="consultant" class="identity left">
       <div class="id-num-bg">01</div>
       <div class="container">
         <div class="identity-grid">
           <div class="identity-image reveal">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-data-NBZhmVMH4KXnqjbEP3g396.webp" alt="The Strategic Consultant" loading="lazy"/>
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663344570243/fvFLaRrWYTIiLIMa.png" alt="Tathastu Naranje — Strategic Consultant" loading="lazy"/>
             <div class="fig-label">Fig. 01 — The Consultant</div>
           </div>
           <div class="identity-text reveal reveal-d1">
@@ -1072,7 +938,7 @@
               <span class="eyebrow num">01</span>
             </div>
             <h2>Market intelligence, <span class="italic">strategically applied.</span></h2>
-            <p class="body-lead">I lead category market intelligence for global procurement teams — turning fragmented signals from suppliers, pricing benchmarks, and macro trends into briefings that sourcing managers can actually act on.</p>
+            <p class="body-lead">I lead category market intelligence for global procurement teams — turning fragmented supplier signals, pricing benchmarks, and macro trends into briefings that sourcing managers can act on this week.</p>
             <dl class="id-bullets">
               <div><dt>Practice</dt><dd>Category market intelligence, vendor analysis, supplier landscapes, negotiation enablement.</dd></div>
               <div><dt>Method</dt><dd>Authentic sources only. Primary data first, frameworks second, narrative last.</dd></div>
@@ -1088,21 +954,54 @@
       </div>
     </section>
 
-    <!-- AUTHOR -->
-    <section id="author" class="identity right" data-section>
+    <!-- MUSICIAN -->
+    <section id="musician" class="identity right">
       <div class="id-num-bg">02</div>
       <div class="container">
         <div class="identity-grid">
           <div class="identity-image reveal">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-astral-LnLjvyeRWGXXcTuXzNwTXV.webp" alt="The Storyteller" loading="lazy"/>
-            <div class="fig-label">Fig. 02 — The Storyteller</div>
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663344570243/cRfgllPwadeuQQuu.png" alt="Tathastu Naranje — Musician" loading="lazy"/>
+            <div class="fig-label">Fig. 02 — The Musician</div>
+          </div>
+          <div class="identity-text reveal reveal-d1">
+            <div class="id-eyebrow-row">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B8956A" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+              <span class="eyebrow">The Musician</span>
+              <span class="rule"></span>
+              <span class="eyebrow num">02</span>
+            </div>
+            <h2>Always <span class="italic">learning.</span></h2>
+            <p class="body-lead">Guitar, keyboard, and a vocal practice still in its honest early chapters. I produce in Logic Pro and treat practice as the same discipline I bring to a category brief.</p>
+            <dl class="id-bullets">
+              <div><dt>Instruments</dt><dd>Acoustic & electric guitar, keyboard. Vocal training underway.</dd></div>
+              <div><dt>Production</dt><dd>Logic Pro X. Exploring AI-assisted arrangement and mixing tools.</dd></div>
+              <div><dt>Catalog</dt><dd>Covers and original works-in-progress shared on Instagram.</dd></div>
+              <div><dt>Philosophy</dt><dd>Process over polish. The practice itself is the work.</dd></div>
+            </dl>
+            <a href="https://www.instagram.com/tathastu_music/" target="_blank" rel="noreferrer" class="id-cta">
+              <span>Listen on Instagram</span>
+              <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUTHOR -->
+    <section id="author" class="identity left">
+      <div class="id-num-bg">03</div>
+      <div class="container">
+        <div class="identity-grid">
+          <div class="identity-image reveal">
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663344570243/KzUpQWffGJiKRsQu.png" alt="Tathastu Naranje — Author of Three Astral" loading="lazy"/>
+            <div class="fig-label">Fig. 03 — The Author</div>
           </div>
           <div class="identity-text reveal reveal-d1">
             <div class="id-eyebrow-row">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B8956A" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-              <span class="eyebrow">The Storyteller</span>
+              <span class="eyebrow">The Author</span>
               <span class="rule"></span>
-              <span class="eyebrow num">02</span>
+              <span class="eyebrow num">03</span>
             </div>
             <h2>Author of <span class="italic">Three Astral.</span></h2>
             <p class="body-lead">A debut novel about a young man whose seizures transport him between Earth and a mystical parallel planet. A meditation on consciousness, identity, and the porous boundary between perception and reality.</p>
@@ -1123,7 +1022,7 @@
 
     <!-- BOOK FEATURE -->
     <section id="book" class="book">
-      <div class="book-bg" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-astral-LnLjvyeRWGXXcTuXzNwTXV.webp')"></div>
+      <div class="book-bg" style="background-image: url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663344570243/KzUpQWffGJiKRsQu.png')"></div>
       <div class="container book-inner">
         <div class="book-cover-wrap reveal">
           <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/book-cover-Qyf3gBNt3MnHeFaD7nAkrU.webp" alt="Three Astral: Thought's Deception" loading="lazy"/>
@@ -1149,32 +1048,32 @@
       </div>
     </section>
 
-    <!-- MUSICIAN -->
-    <section id="musician" class="identity left" data-section>
-      <div class="id-num-bg">03</div>
+    <!-- AI RESEARCH -->
+    <section id="ai" class="identity right">
+      <div class="id-num-bg">04</div>
       <div class="container">
         <div class="identity-grid">
           <div class="identity-image reveal">
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-music-hHVT7ioyjxFeKq22jQncDF.webp" alt="The Creative Spirit" loading="lazy"/>
-            <div class="fig-label">Fig. 03 — The Creative Spirit</div>
+            <img src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663344570243/NeZuCxvnXWaLUENh.png" alt="Tathastu Naranje — AI Researcher" loading="lazy"/>
+            <div class="fig-label">Fig. 04 — The AI Researcher</div>
           </div>
           <div class="identity-text reveal reveal-d1">
             <div class="id-eyebrow-row">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B8956A" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
-              <span class="eyebrow">The Creative Spirit</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#B8956A" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+              <span class="eyebrow">The AI Researcher</span>
               <span class="rule"></span>
-              <span class="eyebrow num">03</span>
+              <span class="eyebrow num">04</span>
             </div>
-            <h2>Musician — <span class="italic">always learning.</span></h2>
-            <p class="body-lead">Guitar, keyboard, and a vocal practice still in its honest early chapters. I produce in Logic Pro, study how AI is reshaping music creation, and treat practice as the same discipline I bring to a category brief.</p>
+            <h2>How AI is <span class="italic">reshaping work.</span></h2>
+            <p class="body-lead">I spend my hours testing AI tools, prompt engineering, and tracing how agentic systems are quietly changing the role of analysts, sourcing leaders, writers, and musicians. Then I publish what works.</p>
             <dl class="id-bullets">
-              <div><dt>Instruments</dt><dd>Acoustic & electric guitar, keyboard. Vocal training underway.</dd></div>
-              <div><dt>Production</dt><dd>Logic Pro X. Exploring AI-assisted arrangement and mixing tools.</dd></div>
-              <div><dt>Catalog</dt><dd>Covers and original works-in-progress shared on Instagram.</dd></div>
-              <div><dt>Philosophy</dt><dd>Process over polish. The practice itself is the work.</dd></div>
+              <div><dt>Focus</dt><dd>Agentic AI workflows, prompt engineering, autonomous research, multi-modal tools.</dd></div>
+              <div><dt>Output</dt><dd>AI Unlocked — weekly newsletter for procurement and intelligence professionals.</dd></div>
+              <div><dt>Toolkit</dt><dd>Claude, Manus AI, ChatGPT, Logic Pro AI, custom prompt libraries.</dd></div>
+              <div><dt>Philosophy</dt><dd>Test relentlessly. Publish only what changes how someone works.</dd></div>
             </dl>
-            <a href="https://www.instagram.com/tathastu_music/" target="_blank" rel="noreferrer" class="id-cta">
-              <span>Listen on Instagram</span>
+            <a href="#newsletter" class="id-cta">
+              <span>Read AI Unlocked</span>
               <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
           </div>
@@ -1182,115 +1081,58 @@
       </div>
     </section>
 
-    <!-- HORIZONTAL GALLERY: Themes & Field Notes -->
-    <section class="gallery">
+    <!-- NEWSLETTER FEATURE -->
+    <section id="newsletter" class="newsletter-feature">
       <div class="container">
-        <div class="gallery-head reveal">
-          <div>
-            <div class="eyebrow" style="margin-bottom: 1rem;">A reading list of obsessions</div>
-            <h2>Threads I'm <span class="italic">pulling.</span></h2>
+        <div class="nf-grid">
+          <div class="nf-left reveal">
+            <div class="eyebrow">Newsletter — published weekly on LinkedIn</div>
+            <h2>AI <span class="italic">Unlocked.</span></h2>
+            <p>Weekly AI tools, hidden features, and prompts that procurement, intelligence, and analyst teams can use the same day. No jargon. Real tricks.</p>
+            <div class="nf-stats">
+              <div class="nf-stat"><div class="num">559</div><div class="label">Readers</div></div>
+              <div class="nf-stat"><div class="num">6</div><div class="label">Editions</div></div>
+              <div class="nf-stat"><div class="num">Weekly</div><div class="label">Cadence</div></div>
+            </div>
+            <a href="https://www.linkedin.com/newsletters/ai-unlocked-7314043770395025410/" target="_blank" rel="noreferrer" class="btn-primary">
+              <span>Subscribe on LinkedIn</span>
+              <svg class="arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
           </div>
-          <div class="eyebrow muted">Scroll horizontally →</div>
-        </div>
-      </div>
-      <div class="gallery-scroller reveal" id="gallery-scroller">
-        <article class="gallery-card">
-          <span class="num">01</span>
-          <div class="kicker">Procurement × AI</div>
-          <h3>Autonomous commerce and the new buyer.</h3>
-          <p>When agents do the negotiating, what is the sourcing manager's craft? Notes on the next decade of category strategy.</p>
-        </article>
-        <article class="gallery-card">
-          <span class="num">02</span>
-          <div class="kicker">Method</div>
-          <h3>The story inside the spend cube.</h3>
-          <p>Extracting narrative from category data — and why the best market intelligence reads like fiction.</p>
-        </article>
-        <article class="gallery-card">
-          <span class="num">03</span>
-          <div class="kicker">Three Astral</div>
-          <h3>World-building as a discipline.</h3>
-          <p>Reflections on writing a novel about dual existence while leading a day job grounded in primary data.</p>
-        </article>
-        <article class="gallery-card">
-          <span class="num">04</span>
-          <div class="kicker">Music</div>
-          <h3>Practice as a method of thought.</h3>
-          <p>What twenty minutes on a fretboard teaches about negotiating a multi-supplier global contract.</p>
-        </article>
-        <article class="gallery-card">
-          <span class="num">05</span>
-          <div class="kicker">Reading</div>
-          <p class="quote">Books currently on the desk: works on consciousness, supplier risk, and the craft of melody.</p>
-        </article>
-        <article class="gallery-card">
-          <span class="num">06</span>
-          <div class="kicker">Open invitation</div>
-          <h3>Looking for collaborators.</h3>
-          <p>If any of these threads resonate — particularly the intersection of analytical work and creative practice — please write.</p>
-        </article>
-      </div>
-    </section>
-
-    <!-- DIVIDER -->
-    <div class="divider-band" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/divider-stars-jurTUarM9xLoVxJG2TsDfv.webp')" aria-hidden="true"></div>
-
-    <!-- ESSAYS -->
-    <section id="essays" class="essays">
-      <div class="container">
-        <div class="essays-head reveal">
-          <div>
-            <div class="eyebrow" style="margin-bottom: 1rem;">Field Notes — Bi-weekly Substack</div>
-            <h2>Field <span class="italic">notes.</span></h2>
+          <div class="nf-right reveal reveal-d1">
+            <a class="nf-card" target="_blank" rel="noreferrer" href="https://www.linkedin.com/pulse/ai-unlocked-edition-6-six-developments-week-should-worry-naranje-uvetc">
+              <div class="top"><span class="edition">Edition #6</span><span class="date">May 5</span></div>
+              <h3>Six AI developments this week that should worry you (in a good way).</h3>
+            </a>
+            <a class="nf-card" target="_blank" rel="noreferrer" href="https://www.linkedin.com/pulse/ai-unlocked-edition-5-secrets-werent-supposed-public-naranje-fbtmc">
+              <div class="top"><span class="edition">Edition #5</span><span class="date">Apr 28</span></div>
+              <h3>5 AI secrets that weren't supposed to be public.</h3>
+            </a>
+            <a class="nf-card" target="_blank" rel="noreferrer" href="https://www.linkedin.com/pulse/ai-unlocked-edition-4-5-tricks-rewriting-procurement-playbook-agmhc">
+              <div class="top"><span class="edition">Edition #4</span><span class="date">Apr 21</span></div>
+              <h3>5 AI tricks that are rewriting the procurement playbook.</h3>
+            </a>
+            <a class="nf-card" target="_blank" rel="noreferrer" href="https://www.linkedin.com/pulse/ai-unlocked-edition-3-5-tools-built-specifically-week-naranje-6ptvc">
+              <div class="top"><span class="edition">Edition #3</span><span class="date">Apr 14</span></div>
+              <h3>5 AI tools built specifically for procurement this week.</h3>
+            </a>
           </div>
-          <a href="#contact" class="brass-link" style="font-size: 0.9rem;">Subscribe →</a>
-        </div>
-        <div class="essays-grid">
-          <article class="essay-card reveal">
-            <div class="top"><span class="num">01</span><span class="tag">Forthcoming</span></div>
-            <div class="eyebrow">Procurement × AI</div>
-            <h3>When the agent becomes the buyer.</h3>
-            <p>Autonomous commerce is no longer hypothetical. What happens to category sourcing when the agent is making the call?</p>
-            <div class="read">Read when published <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
-          </article>
-          <article class="essay-card reveal reveal-d1">
-            <div class="top"><span class="num">02</span><span class="tag">Forthcoming</span></div>
-            <div class="eyebrow">Method</div>
-            <h3>The story inside the spend cube.</h3>
-            <p>A working note on extracting narrative from category data — and why the best market intelligence reads like fiction.</p>
-            <div class="read">Read when published <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
-          </article>
-          <article class="essay-card reveal reveal-d2">
-            <div class="top"><span class="num">03</span><span class="tag">Forthcoming</span></div>
-            <div class="eyebrow">Cross-pollination</div>
-            <h3>Composing a sourcing strategy.</h3>
-            <p>What disciplined practice on a fretboard taught me about negotiating a multi-supplier global contract.</p>
-            <div class="read">Read when published <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg></div>
-          </article>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="contact">
-      <div class="contact-bg" style="background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/hero-data-NBZhmVMH4KXnqjbEP3g396.webp')"></div>
       <div class="container contact-grid">
         <div class="contact-left reveal">
           <div class="eyebrow" style="margin-bottom: 1.5rem;">Correspondence</div>
           <h2>Let's <span class="italic">talk.</span></h2>
-          <p class="contact-lead">Whether it's a category brief, a book signing, a podcast, or just a conversation about where data and storytelling meet — I read every note.</p>
+          <p class="contact-lead">Whether it's a category brief, a podcast invitation, a book club visit, or a conversation about where AI is taking analytical work — I read every note.</p>
           <div class="contact-links">
-            <a class="contact-link" href="mailto:hello@tathastunaranje.com">
+            <a class="contact-link" href="mailto:tatha95611@gmail.com">
               <span class="left">
                 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                hello@tathastunaranje.com
-              </span>
-              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-            </a>
-            <a class="contact-link" target="_blank" rel="noreferrer" href="https://in.linkedin.com/in/tathastu-naranje">
-              <span class="left">
-                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                /in/tathastu-naranje
+                tatha95611@gmail.com
               </span>
               <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
@@ -1301,40 +1143,47 @@
               </span>
               <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
+            <a class="contact-link" target="_blank" rel="noreferrer" href="https://in.linkedin.com/in/tathastu-naranje">
+              <span class="left">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                /in/tathastu-naranje
+              </span>
+              <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
           </div>
         </div>
         <div class="contact-right reveal reveal-d1">
-          <div class="newsletter-card">
-            <div class="eyebrow" style="margin-bottom: 1rem;">Field Notes — Newsletter</div>
-            <h3>Bi-weekly briefings from the desk of a Renaissance Consultant.</h3>
-            <p>Market intelligence essays, supplier landscape notes, and the occasional meditation on writing and music. No filler. Unsubscribe anytime.</p>
-            <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='✓ On the list'; this.querySelector('button').disabled=true;">
-              <input type="email" required placeholder="your@email.com"/>
-              <button type="submit">Subscribe</button>
-            </form>
+          <div class="contact-card">
+            <div class="eyebrow">Subscribe</div>
+            <h3>AI Unlocked — weekly briefings.</h3>
+            <p>Concrete AI tools, prompts, and procurement-specific use cases. Every week, on LinkedIn.</p>
+            <a class="cta-line" href="https://www.linkedin.com/newsletters/ai-unlocked-7314043770395025410/" target="_blank" rel="noreferrer">
+              <span>Read on LinkedIn</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- SEAL FOOTER -->
+  <!-- FOOTER -->
   <footer class="seal-footer">
     <div class="container">
-      <img class="seal" src="https://d2xsxph8kpxj0f.cloudfront.net/310519663344570243/cKhPgXEz46FVjGSzzFL8EA/seal-emblem-KAzrdzXaHV4aVuJBaKgcm6.webp" alt="TN Seal" loading="lazy"/>
+      <div class="seal-text">Tathastu</div>
       <div class="footer-words">
-        Finding the <span class="italic">story.</span>
+        Practice is the bridge between <span style="font-style: normal; color: var(--brass);">intention</span> and <span style="font-style: normal; color: var(--brass);">craft.</span>
       </div>
       <div class="footer-meta">
         <span>© 2026 Tathastu Naranje</span>
-        <span>Mumbai, India</span>
+        <span>Bengaluru, India</span>
         <span class="brass">Built by Tathastu</span>
       </div>
     </div>
   </footer>
 
   <script>
-    // ============= CUSTOM CURSOR =============
+    // Cursor
     (function() {
       const dot = document.getElementById('cursor-dot');
       const ring = document.getElementById('cursor-ring');
@@ -1356,7 +1205,7 @@
       });
     })();
 
-    // ============= HEADER SCROLL + PROGRESS =============
+    // Header scroll + progress
     const header = document.getElementById('site-header');
     const progress = document.getElementById('progress');
     const onScroll = () => {
@@ -1368,7 +1217,7 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
-    // ============= HERO PARALLAX =============
+    // Parallax
     const heroBg = document.getElementById('hero-bg-img');
     if (heroBg) {
       window.addEventListener('scroll', () => {
@@ -1377,26 +1226,7 @@
       }, { passive: true });
     }
 
-    // ============= HERO CHAR REVEAL =============
-    document.querySelectorAll('.char-reveal').forEach(el => {
-      const text = el.getAttribute('data-text') || el.textContent;
-      el.textContent = '';
-      [...text].forEach((c, i) => {
-        const span = document.createElement('span');
-        span.className = 'char';
-        span.textContent = c === ' ' ? '\u00A0' : c;
-        span.style.transitionDelay = (i * 35) + 'ms';
-        el.appendChild(span);
-      });
-      // Small delay so font has loaded
-      setTimeout(() => el.classList.add('in'), 100);
-    });
-    // Safety: force-reveal characters after 1.5s
-    setTimeout(() => {
-      document.querySelectorAll('.char-reveal:not(.in)').forEach(el => el.classList.add('in'));
-    }, 1500);
-
-    // ============= ROTATING TAGLINE =============
+    // Tagline rotator
     const taglines = document.querySelectorAll('#tagline-wrap .tagline');
     const counter = document.getElementById('tagline-counter');
     let tagIdx = 0;
@@ -1409,15 +1239,13 @@
         tagIdx = (tagIdx + 1) % taglines.length;
         taglines[tagIdx].classList.remove('exit');
         taglines[tagIdx].classList.add('active');
-        if (counter) counter.textContent = String(tagIdx + 1).padStart(2, '0') + ' / 03';
+        if (counter) counter.textContent = String(tagIdx + 1).padStart(2, '0') + ' / 0' + taglines.length;
         setTimeout(() => taglines[prev].classList.remove('exit'), 1000);
       }, 3400);
     }
 
-    // ============= REVEAL ON SCROLL =============
-    function revealAll() {
-      document.querySelectorAll('.reveal, .reveal-mask').forEach(el => el.classList.add('in'));
-    }
+    // Reveal
+    function revealAll() { document.querySelectorAll('.reveal').forEach(el => el.classList.add('in')); }
     if ('IntersectionObserver' in window) {
       const io = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -1427,14 +1255,11 @@
           }
         });
       }, { rootMargin: '0px 0px -10% 0px', threshold: 0.01 });
-      document.querySelectorAll('.reveal:not(.in), .reveal-mask:not(.in)').forEach((el) => io.observe(el));
-      // Safety: any element still hidden after 4s gets revealed (handles slow image loads / odd viewports)
+      document.querySelectorAll('.reveal:not(.in)').forEach((el) => io.observe(el));
       setTimeout(revealAll, 4000);
-    } else {
-      revealAll();
-    }
+    } else { revealAll(); }
 
-    // ============= LIVE MUMBAI CLOCK =============
+    // Live Bengaluru clock
     function updateClock() {
       const now = new Date();
       const fmt = new Intl.DateTimeFormat('en-IN', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: false });
@@ -1445,27 +1270,28 @@
     updateClock();
     setInterval(updateClock, 30000);
 
-    // ============= CURRENT-STATUS ROTATOR =============
+    // Currently rotator
     const statuses = [
       'studying autonomous commerce',
-      'drafting volume II',
-      'practicing scales',
-      'reading on consciousness',
-      'building field notes'
+      'drafting AI Unlocked edition #7',
+      'practicing chord progressions',
+      'reading on consciousness and pattern recognition',
+      'exploring agentic AI workflows',
+      'writing Three Astral, Volume II'
     ];
     let sIdx = 0;
     const nowEl = document.getElementById('now-status');
-    setInterval(() => {
-      sIdx = (sIdx + 1) % statuses.length;
-      if (nowEl) {
+    if (nowEl) {
+      nowEl.style.transition = 'opacity 400ms cubic-bezier(0.22,1,0.36,1)';
+      setInterval(() => {
+        sIdx = (sIdx + 1) % statuses.length;
         nowEl.style.opacity = '0';
         setTimeout(() => { nowEl.textContent = statuses[sIdx]; nowEl.style.opacity = '1'; }, 280);
-      }
-    }, 4200);
-    if (nowEl) nowEl.style.transition = 'opacity 400ms cubic-bezier(0.22,1,0.36,1)';
+      }, 4500);
+    }
 
-    // ============= MINIMAP ACTIVE STATE =============
-    const sections = document.querySelectorAll('[data-section], #top, #essays, #contact');
+    // Minimap active
+    const sections = document.querySelectorAll('#top, #consultant, #musician, #author, #ai, #newsletter, #contact');
     const mmLinks = document.querySelectorAll('#minimap a');
     if ('IntersectionObserver' in window) {
       const mmObserver = new IntersectionObserver((entries) => {
@@ -1479,7 +1305,7 @@
       sections.forEach(s => mmObserver.observe(s));
     }
 
-    // ============= THEME TOGGLE =============
+    // Theme toggle
     const root = document.documentElement;
     const themeBtn = document.getElementById('theme-toggle');
     const iconDark = document.getElementById('theme-icon-dark');
